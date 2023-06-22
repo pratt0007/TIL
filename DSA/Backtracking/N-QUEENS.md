@@ -1,5 +1,6 @@
 https://leetcode.com/problems/n-queens/
-'''c++
+
+```cpp
 class Solution {
 public:
 
@@ -55,11 +56,13 @@ public:
         return ans;
     }
 };
+```
 <h2>OPTIMIZATION</h2>
 <h3>The optimization can be made in the checking part for placing the queen by making a hash table of (2n-1) length and checking out the ones which are placed. By this we will not have to use while loop inside the isSafe function. </h3>
 ![image](https://github.com/pratt0007/TIL/assets/100209212/98049c98-5e7b-442a-b93c-945e7fc0be85)
 
-'''c++
+```cpp
+
 class Solution {
 public:
     void solve(int i,int& n,vector<string> &tmp, vector<vector<string>> &ans,vector<bool> &c,vector<bool> &md,vector<bool> &td){
@@ -88,4 +91,4 @@ public:
         return ans.size();
     }
 };
-
+```
