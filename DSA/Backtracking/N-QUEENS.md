@@ -55,3 +55,37 @@ public:
         return ans;
     }
 };
+<h2>OPTIMIZATION</h2>
+<h3>The optimization can be made in the checking part for placing the queen by making a hash table of (2n-1) length and checking out the ones which are placed. By this we will not have to use while loop inside the isSafe function. </h3>
+![image](https://github.com/pratt0007/TIL/assets/100209212/98049c98-5e7b-442a-b93c-945e7fc0be85)
+
+'''c++
+class Solution {
+public:
+    void solve(int i,int& n,vector<string> &tmp, vector<vector<string>> &ans,vector<bool> &c,vector<bool> &md,vector<bool> &td){
+        if(i==n){
+            ans.push_back(tmp);
+            return;
+        }
+        string str(n,'.');
+        for(int j = 0; j < n; j++){
+            if((c[j]==false&&md[i-j+n]==false&&td[i+j]==false)){
+                str[j] = 'Q';
+                c[j] = true;md[i-j+n]=true;td[i+j] = true;
+                tmp.push_back(str);
+                solve(i+1,n,tmp,ans,c,md,td);
+                tmp.pop_back();
+                str[j] = '.';
+                c[j] = false;md[i-j+n]=false;td[i+j] = false;
+            }
+        }
+    }
+    int totalNQueens(int n) {
+        vector<vector<string>> ans;
+        vector<string> tmp;
+        vector<bool> c(n,false),md(2*n+3,false),td(2*n+3,false);
+        solve(0,n,tmp,ans,c,md,td);
+        return ans.size();
+    }
+};
+
