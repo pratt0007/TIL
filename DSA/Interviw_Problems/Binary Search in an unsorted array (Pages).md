@@ -67,3 +67,78 @@ class Solution
 IS APPROCH SE SIRF 2 ME DIVIDE KAREGA - JO SABSE PEHLE DIMAG ME AYA OR BOHT GALT
 ```
 
+```cpp
+
+class Solution 
+{
+    public:
+    //Function to find minimum number of pages.
+    
+    bool is_possible(int A[],int mid, int N, int M)
+    {
+        int sum_pages = 0;
+        int students=1;
+        for(int i=0; i < N;i++ )
+        {
+            if(sum_pages + A[i]<= mid )
+            {
+              sum_pages += A[i];
+            }
+             
+            else
+            {
+                students++;
+                
+                if(students > M || A[i] > mid)
+                 {
+                     return false;
+                 }
+                sum_pages = A[i];
+            }
+        }
+        return true;
+    }
+    
+    
+    
+    int findPages(int A[], int N, int M) 
+    {
+        //code here
+       if(N<M)return -1;
+        int low=0;
+        int sum=0;
+        
+        for(int i=0;i<N;i++)
+        {
+            sum += A[i];
+        }
+        
+        int high = sum;
+        int ans = -1;
+     
+        int mid = low + (high - low)/2;
+        
+        while(low<=high)
+        {
+            if(is_possible(A, mid, N, M ))
+            {
+                ans = mid;
+                high = mid - 1 ;
+            }
+            else {
+                
+                low = mid + 1;
+            }
+            
+            mid = low + (high - low)/2;
+        }
+        
+    return ans;    
+        
+    }
+};
+```
+```
+Using bianry search in an unsorted array in such a way that we get min pages alloted to a person,
+```
+
