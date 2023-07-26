@@ -39,36 +39,7 @@ class Solution
 ```
 Easy solution me prefix sum nikalte jao and then take min(ans , max(k , n-k)) iska ans jo ayega vo min book that can be alloted to a person hoga. Ye galt 
 ```
-```
-class Solution 
-{
-    public:
-   
-    //Function to find minimum number of pages.
-    int findPages(int A[], int N, int M) 
-    {
-        if(M>N) return -1; 
-        
-        
-        int total_sum = 0;
-        for(int i = 0 ; i<N ; i++){
-            total_sum += A[i];
-        }
-        
-        int res = INT_MAX;
-        int csum = 0;
-        for(int i = 0 ; i< N-1 ; i++){
-            csum += A[i];
-            res = min(res , max(csum , (total_sum - csum)));
-            
-        }
-        return res;
-        
-        //code here
-    }
-};
-IS APPROCH SE SIRF 2 ME DIVIDE KAREGA - JO SABSE PEHLE DIMAG ME AYA OR BOHT GALT
-```
+
 
 ```cpp
 
@@ -143,5 +114,27 @@ class Solution
 ```
 ```
 Using bianry search in an unsorted array in such a way that we get min pages alloted to a person,
+```
+```
+ class Solution {
+public:
+    int minimizedMaximum(int n, vector<int>& q) {
+        sort(q.begin(), q.end());
+        int m = q.size(), start = 1, end = q[m-1], ans = -1;
+        if(n==m)    return end;
+        while(start<=end){
+            int mid = start+(end-start)/2;
+            long long qCount = 0;
+            for(int i=0; i<m; i++)
+                qCount += (q[i])/mid + 1;
+            if(qCount <= n)
+                ans = mid ;
+                end = mid-1;
+            else
+                start = mid+1;
+        }
+        return ans;
+    }
+};
 ```
 
