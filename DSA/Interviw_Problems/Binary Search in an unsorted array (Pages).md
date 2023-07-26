@@ -1,6 +1,9 @@
 ```
 https://practice.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
 ```
+```
+https://leetcode.com/problems/minimized-maximum-of-products-distributed-to-any-store/description/
+```
 ```cpp
 class Solution 
 {
