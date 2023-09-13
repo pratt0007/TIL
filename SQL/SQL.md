@@ -81,6 +81,9 @@ CREATE TABLE new_table_name AS
     FROM existing_table_name
     WHERE ....;
 ```
+```
+SELECT * INTO New_table_name FROM old_table_name;
+```
 ### SQL DROP TABLE Statement:
 - The `DROP TABLE` statement is used to drop an existing table in a database.
 ```sql
@@ -90,4 +93,93 @@ DROP TABLE table_name;
   - The `TRUNCATE TABLE` statement is used to delete all the data inside a table, but not the table itself.
 ```sql
 TRUNCATE TABLE table_name;
+```
+####  Difference between DELETE and TRUNCATE statements
+```
+
+There is a slight difference b/w delete and truncate statement. The DELETE statement only deletes the rows from the table based on the condition defined by WHERE clause or delete all the rows from the table when condition is not specified.
+
+But it does not free the space containing by the table.
+
+The TRUNCATE statement: it is used to delete all the rows from the table and free the containing space.
+```
+### ALTER TABLE Statement
+- The `ALTER TABLE` statement is used to add, delete, or modify columns in an existing table. It can also be used to add and drop various constraints on an existing table.
+```sql
+-- Add Column
+ALTER TABLE table_name
+ADD column_name datatype;
+
+-- Drop Column
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+-- Rename Column
+ALTER TABLE table_name
+RENAME COLUMN old_name to new_name;
+
+-- Modify Datatype
+ALTER TABLE table_name
+MODIFY COLUMN column_name datatype;
+```
+### TEMP TABLES
+- Temporary tables can be created at run-time and can do all kinds of operations that a normal table can do. These temporary tables are created inside tempdb database.
+- There are two types of temp tables based on the behavior and scope.
+-  1. Local Temp Variable
+-  2. Global Temp Variable
+#### LOCAL
+```Local temp tables are only available at current connection time. It is automatically deleted when user disconnects from instances. It is started with hash (#) sign.
+
+CREATE TABLE #local temp table (  
+User id int,  
+Username varchar (50),  
+User address varchar (150)  
+)
+```
+#### GLOBAL
+```
+Global Temp Variable
+Global temp tables name starts with double hash (##). Once this table is created, it is like a permanent table. It is always ready for all users and not deleted until the total connection is withdrawn.
+
+CREATE TABLE ##new global temp table (  
+User id int,  
+User name varchar (50),  
+User address varchar (150)  
+)  
+```
+### Constraints:
+- Constraints can be specified when the table is created with the `CREATE TABLE` statement, or after the table is created with the `ALTER TABLE` statement.
+```sql
+CREATE TABLE table_name (
+    column1 datatype constraint,
+    column2 datatype constraint,
+    column3 datatype constraint,
+    ....
+);
+```
+#### NOT NULL Constraint:
+- The `NOT NULL` constraint enforces a column to NOT accept NULL values.
+#### UNIQUE Constraint:
+- The `UNIQUE` constraint ensures that all values in a column are different. Both the `UNIQUE` and `PRIMARY KEY` constraints provide a guarantee for uniqueness for a column or set of columns.
+- A `PRIMARY KEY` constraint automatically has a `UNIQUE` constraint. However, you can have many `UNIQUE` constraints per table, but only one `PRIMARY KEY` constraint per table.
+#### DEFAULT Constraint:
+- The `DEFAULT` constraint is used to set a default value for a column and will be passed as a value if no input is provided.
+
+#### AUTO INCREMENT Field:
+- Auto-increment allows a unique number to be generated automatically when a new record is inserted into a table. Not exactly a constraint but is passed into the table and this is normally used for a primary key.
+
+### UPDATE Statement:
+- The `UPDATE` statement is used to modify the existing records in a table.
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+-- If we omit WHERE -> all the values are updated.
+```
+### DELETE Statement:
+- The `DELETE` statement is used to delete existing records in a table.
+```sql
+DELETE FROM table_name WHERE condition;
+-- If we Omit WHERE -> all values are deleted
 ```
