@@ -206,16 +206,58 @@ SET column1 = value1, column2 = value2, ...
 WHERE condition;
 
 -- If we omit WHERE -> all the values are updated.
+
+UPDATE students  
+SET User_Name = 'beinghuman'  
+WHERE Student_Id = '3'  
 ```
 ### DELETE Statement:
 - The `DELETE` statement is used to delete existing records in a table.
 ```sql
 DELETE FROM table_name WHERE condition;
 -- If we Omit WHERE -> all values are deleted
+
+
+DELETE FROM EMPLOYEE WHERE ID=101;  
 ```
 
 ## SQL SELECT Statement:
 - The `SELECT` statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
+- SQL SELECT DISTINCT: Retrieve unique values from a column or set of columns in a table.
+- SQL SELECT COUNT: Calculate the number of rows in a table, optionally based on a specified condition.
+- SQL SELECT LIMIT: Retrieve a specified number of rows from the beginning of a result set.
+- SQL SELECT OFFSET and LIMIT: Retrieve a specified number of rows starting from a given position in a result set (used for pagination).
+- SQL SELECT RANDOM: Retrieve random rows from a table.
+- SQL SELECT IN: Retrieve rows where a specified column matches any value in a list.
+- SQL SELECT Multiple Columns: Retrieve specific columns from a table.
+- SQL SELECT DATE: Retrieve rows based on date-related conditions.
+- SQL SELECT SUM: Calculate the sum of values in a column, optionally based on a condition.
+- SQL SELECT NULL: Retrieve rows where a specified column has a NULL value.
+
+```
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+SELECT COUNT(*) 
+FROM table_name;
+
+SELECT COUNT(*) 
+FROM table_name 
+WHERE condition;
+
+SELECT column1, column2, ...
+FROM table_name
+LIMIT number_of_rows OFFSET offset_value;
+
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY RAND()
+LIMIT number_of_rows;
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+```
 ```sql
 -- Select certain columns from the table
 SELECT column1, column2, ...
@@ -237,5 +279,53 @@ ORDER BY column1, column2, ... ASC|DESC;
 SELECT *
 FROM table_name
 ORDER BY columnx, columny;
+```
+
+### WHERE Clause:
+- The `WHERE` clause is used to filter records. It is used to extract only those records that fulfil a specified condition.
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+-- Operators which can be used in the WHERE Statements
+=            Equal
+>            Greater than
+<            Less than
+>=           Greater than or equal
+<=           Less than or equal
+<>           Not equal
+
+BETWEEN      Between a certain range
+  WHERE column_name BETWEEN value1 AND value2;
+LIKE         Search for a pattern
+  WHERE column_name LIKE pattern;
+IN           To specify multiple possible values for a column
+  WHERE column_name IN (value1, value2, ...);
+```
+
+### AS clause:
+- The `AS` command is used to rename a column or table with an alias.
+```sql
+SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;
+```
+
+### SELECT DISTINCT Statement:
+- The `SELECT DISTINCT` statement is used to return only distinct (different) values.
+```sql
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+```
+
+### GROUP BY Statement:
+- The `GROUP BY` statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+- The `GROUP BY` statement is often used with aggregate functions (`COUNT()`, `MAX()`, `MIN()`, `SUM()`, `AVG()`) to group the result-set by one or more columns.
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+GROUP BY column_name(s)
+ORDER BY column_name(s);
 ```
 
