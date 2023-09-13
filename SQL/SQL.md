@@ -41,7 +41,7 @@ XML stands for "eXtensible Markup Language." XML is a markup language that was d
 - It is a set of attributes that uniquely identify tuples in a table. Candidate Key is a super key with no repeated attributes.
 #### Alternate Key:
 - It is a column or group of columns in a table that uniquely identify every row in that table.
-  ```
+```
   CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
     employee_code VARCHAR(10) UNIQUE, -- This is an alternate key
@@ -51,6 +51,7 @@ XML stands for "eXtensible Markup Language." XML is a markup language that was d
     hire_date DATE
 );
 ```
+
 #### Foreign Key:
 - It is a column that creates a relationship between two tables. The purpose of Foreign keys is to maintain data integrity and allow navigation between two different instances of an entity.
 ```
