@@ -41,12 +41,41 @@ XML stands for "eXtensible Markup Language." XML is a markup language that was d
 - It is a set of attributes that uniquely identify tuples in a table. Candidate Key is a super key with no repeated attributes.
 #### Alternate Key:
 - It is a column or group of columns in a table that uniquely identify every row in that table.
+  ```
+  CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    employee_code VARCHAR(10) UNIQUE, -- This is an alternate key
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100) UNIQUE,
+    hire_date DATE
+);
+```
 #### Foreign Key:
 - It is a column that creates a relationship between two tables. The purpose of Foreign keys is to maintain data integrity and allow navigation between two different instances of an entity.
+```
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    order_date DATE,
+    total_amount DECIMAL(10, 2),
+    customer_id INT,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+```
 #### Compound Key: 
 - It has two or more attributes that allow you to uniquely recognize a specific record. It is possible that each column may not be unique by itself within the database.
+```
+CREATE TABLE orders (
+    order_id INT,
+    customer_id INT,
+    order_date DATE,
+    total_amount DECIMAL(10, 2),
+    PRIMARY KEY (order_id, customer_id) // This is how we make 2 col primary 
+);
+```
 #### Composite Key: 
 - It is a combination of two or more columns that uniquely identify rows in a table. The combination of columns guarantees uniqueness, though individual uniqueness is not guaranteed.
+
 #### Surrogate Key:
 - An artificial key which aims to uniquely identify each record is called a surrogate key. These kind of key are unique because they are created when you don't have any natural primary key.
 
@@ -183,3 +212,29 @@ WHERE condition;
 DELETE FROM table_name WHERE condition;
 -- If we Omit WHERE -> all values are deleted
 ```
+
+## SQL SELECT Statement:
+- The `SELECT` statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
+```sql
+-- Select certain columns from the table
+SELECT column1, column2, ...
+FROM table_name;
+
+-- Select the whole table
+SELECT * FROM table_name;
+```
+### ORDER BY Keyword:
+- The `ORDER BY` keyword is used to sort the result-set in ascending or descending order.
+- If we don't specify the order it needs to be returned in, it defualts to acending order.
+```sql
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+-- Also we could be selective in ordering the table:
+-- In this, we first order according to columnx, if there is a clash then we order those objects according to columny
+SELECT *
+FROM table_name
+ORDER BY columnx, columny;
+```
+
