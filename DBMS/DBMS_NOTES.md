@@ -115,6 +115,43 @@ Durability ensures the permanency of something. In DBMS, the term durability ens
 
 
 
-  
+## Normalization
+- A large database defined as a single relation may result in data duplication. This repetition of data may result in:
+- Making relations very large.
+- It isn't easy to maintain and update data as it would involve searching many records in relation.
+- Wastage and poor utilization of disk space and resources.
+- The likelihood of errors and inconsistencies increases.
+- So to handle these problems, we should analyze and decompose the relations with redundant data into smaller, simpler, and well-structured relations that are satisfy desirable properties.
+- Normalization is a process of decomposing the relations into relations with fewer attributes.
 
-  
+### Types of anomilies
+![image](https://github.com/pratt0007/TIL/assets/100209212/93efcb7c-7de8-4046-9d02-727ca5f6b20f)
+
+### Forms
+![image](https://github.com/pratt0007/TIL/assets/100209212/e9601362-246e-407f-96d1-5b3f5072e97f)
+
+![image](https://github.com/pratt0007/TIL/assets/100209212/c7460c0f-81c2-4711-8362-5a05f6bf130c)
+
+
+
+Normalization in DBMS (Database Management System) is a process of organizing a relational database to minimize data redundancy and improve data integrity by removing or reducing data anomalies. It involves decomposing large tables into smaller, related tables and establishing relationships between them. The normalization process is typically divided into different normal forms (1NF, 2NF, 3NF, BCNF, etc.), each with its own set of rules and guidelines. Here's an overview of normalization up to the Third Normal Form (3NF):
+
+1. **First Normal Form (1NF):**
+   - Each column in a table must contain atomic (indivisible) values.
+   - Each column must have a unique name.
+   - The order of rows and columns doesn't matter.
+   - Duplicate rows are allowed.
+
+2. **Second Normal Form (2NF):**
+   - Must satisfy 1NF.
+   - All non-key attributes (attributes not part of the primary key) must be functionally dependent on the entire primary key.
+   - This eliminates partial dependencies.
+
+3. **Third Normal Form (3NF):**
+   - Must satisfy 2NF.
+   - All non-key attributes must be functionally dependent on the primary key and nothing else.
+   - This eliminates transitive dependencies.
+
+To illustrate, consider a hypothetical "Library" database with tables for "Books," "Authors," and "Publishers." A denormalized version might store author names and publisher names directly in the "Books" table, leading to data redundancy and potential anomalies. Normalization would involve breaking this down into separate tables for authors and publishers, each with a unique identifier, and establishing relationships between them and the "Books" table.
+
+Normalization helps improve data integrity by ensuring that data is stored efficiently and without inconsistencies. It also simplifies data maintenance and reduces the risk of update anomalies. However, normalization is not a one-size-fits-all solution; the level of normalization applied depends on the specific needs and requirements of the database design and application. Sometimes, denormalization may be necessary for performance optimization in read-heavy scenarios.
