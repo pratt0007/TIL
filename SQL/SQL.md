@@ -329,3 +329,160 @@ GROUP BY column_name(s)
 ORDER BY column_name(s);
 ```
 
+
+## [MySQL Functions](https://www.w3schools.com/sql/sql_ref_mysql.asp):
+- MySQL has many built-in functions which can be used to find the various values we need like SUM, AVG, etc.
+
+## Wildcards:
+
+### LIKE Operator:
+The `LIKE` operator is used in a `WHERE` clause to search for a specified pattern in a column.
+There are two wildcards often used in conjunction with the `LIKE` operator:
+- The percent sign (%) represents zero, one, or multiple characters
+- The underscore sign (_) represents one, single character
+
+```sql
+SELECT column1, column2, ...
+FROM table_name
+WHERE column LIKE pattern;
+
+-- Using %
+-- In this example, we use this wildcard to specify that there can be nay number of characters before LLC but if this kind of pattern is present in the table client and in the column client_name then we will return it.
+SELECT *
+FROM client
+WHERE client_name LIKE '%LLC';
+
+-- Using _
+-- In this example, we use _ to specify one character space. In this example, the person with thier birthday in october is shown as a result
+SELECT *
+FROM employee
+WHERE birth_date LIKE '____-10%';
+```
+
+## UNION Operator:
+The `UNION` operator is used to combine the result-set of two or more `SELECT` statements.
+- Every `SELECT` statement within `UNION` must have the same number of columns
+- The columns must also have similar data types
+- The columns in every `SELECT` statement must also be in the same order
+```sql
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+```
+
+## JOIN Clause:
+- A `JOIN` clause is used to combine rows from two or more tables, based on a related column between them.
+- table1 -> Left and table2 -> Right
+- Here are the different types of the JOINs in SQL:
+
+<img width="864" alt="Joins" src="https://github.com/IshaanAdarsh/TIL/assets/100434702/ecb41b2b-1dd4-4826-b1bc-ac4b40294954">
+
+  - `(INNER) JOIN`: Returns records that have matching values in both tables
+```sql
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+```
+  - `LEFT (OUTER) JOIN`: Returns all records from the left table, and the matched records from the right table
+```sql
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+```
+  - `RIGHT (OUTER) JOIN`: Returns all records from the right table, and the matched records from the left table
+```sql
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+```
+  - `FULL (OUTER) JOIN`: Returns all records when there is a match in either left or right table
+```sql
+SELECT column_name(s)
+FROM table1
+FULL OUTER JOIN table2
+ON table1.column_name = table2.column_name
+WHERE condition;
+```
+## Nested Queries:
+- Nested queries are a way to perform more complex queries by embedding one query within another.
+- First the innermost statement is executed then the next one [IN -> OUT].
+### SQL IN Operator:
+- The `IN` operator allows you to specify multiple values in a WHERE clause. It is a shorthand for multiple `OR` conditions.
+```sql
+-- For executing multiple OR statements
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (value1, value2, ...);
+
+-- For executing nested Queries
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
+```
+## ON DELETE STATEMENT:
+- We use DELETE to remove a certain object or column in the table. But ON DELETE is a special attribute which tells the table what values need to be present if the key is deleted.
+
+1) `ON DELETE CASCADE` constraint is used in MySQL to delete the rows from the child table automatically when the rows from the parent table are deleted.
+2) `ON DELETE SET NULL` constraint deletes or updates the row from the parent table and set the foreign key column or columns in the child table to NULL.
+
+> Always use CASCADE if the primary key of a table is being affected as the key can't be null. 
+```sql
+-- If we remove a manager then the values corresponding to the manages will get set to null in SET NULL and DELETED if CASCADED 
+-- SET NULL
+CREATE TABLE branch (
+  branch_id INT PRIMARY KEY,
+  branch_name VARCHAR(40),
+  mgr_id INT,
+  mgr_start_date DATE,
+  FOREIGN KEY(mgr_id) REFERENCES employee(emp_id) ON DELETE SET NULL
+);
+
+--  CASCADE
+CREATE TABLE branch_supplier (
+  branch_id INT,
+  supplier_name VARCHAR(40),
+  supply_type VARCHAR(40),
+  PRIMARY KEY(branch_id, supplier_name),
+  FOREIGN KEY(branch_id) REFERENCES branch(branch_id) ON DELETE CASCADE
+);
+```
+
+## Trigger:
+- Triggers will be helpful when we need to execute some events automatically on certain desirable scenarios.
+```sql
+-- Create Trigger
+CREATE TRIGGER schema.trigger_name  
+ON table_name  
+AFTER  {INSERT, UPDATE, DELETE}  
+[NOT FOR REPLICATION]  
+AS  
+{SQL_Statements}
+
+-- Drop Trigger
+DROP TRIGGER [IF EXISTS] schema_name.trigger_name;  
+```
+
+## Common Table Expression:
+- CTEs act as virtual tables (with records and columns) that are created during query execution, used by the query, and deleted after the query executes.
+```sql
+-- Syntax:
+[WITH  [, …]]  
+::=
+cte_name [(column_name [, …])]
+AS (cte_query) 
+
+-- Example
+-- We need to execute these queries together, or else the select won't work on its own
+WITH CTE Employee as
+(SELECT FirstName, LastName, Gender, Salary , COUNT (gender) OVER (PARTITION by Gender) as TotalGender , AVG (Salary) OVER (PARTITION BY Gender) as AvgSalary
+FROM SQLTutorial..EmployeeDemographics emp
+JOIN SQLTutorial..EmployeeSalary sal
+ON emp.EmployeeID = sal. EmployeeID
+WHERE Salary > '45000'
+)
+SELECT * FROM CTE_EMPLOYEE;
+
+```
