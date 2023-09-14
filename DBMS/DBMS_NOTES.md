@@ -12,6 +12,17 @@
 
 - The main purpose of the database is to operate a large amount of information by storing, retrieving, and managing data
 
+### Data Integrity
+- Data integrity refers to the overall accuracy, completeness, and reliability of data.
+ #### 1. Domain Integrity-
+ - restrict the format , type and volume of data stored by putting constraits or defining data type
+#### 2. Entity Integrity :-
+- The purpose is to ensure that data is not recorded multiple times. Eg making primary key
+#### 3. Referncial Integrity
+- Remove duplicate data record (Foreign Key concept)
+#### 4. User Defined Integrity :-
+- User constraints
+
 ## Types of Databases
 - RDBMS - SQL
 - File-Based
