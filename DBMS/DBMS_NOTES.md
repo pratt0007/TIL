@@ -155,3 +155,6 @@ Normalization in DBMS (Database Management System) is a process of organizing a 
 To illustrate, consider a hypothetical "Library" database with tables for "Books," "Authors," and "Publishers." A denormalized version might store author names and publisher names directly in the "Books" table, leading to data redundancy and potential anomalies. Normalization would involve breaking this down into separate tables for authors and publishers, each with a unique identifier, and establishing relationships between them and the "Books" table.
 
 Normalization helps improve data integrity by ensuring that data is stored efficiently and without inconsistencies. It also simplifies data maintenance and reduces the risk of update anomalies. However, normalization is not a one-size-fits-all solution; the level of normalization applied depends on the specific needs and requirements of the database design and application. Sometimes, denormalization may be necessary for performance optimization in read-heavy scenarios.
+
+## ER Diagram
+![image](https://github.com/pratt0007/TIL/assets/100209212/12f624a9-9177-4bcb-9dee-981d7679f1e7)
