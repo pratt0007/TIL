@@ -8,6 +8,8 @@
 - The building block of C++ that leads to Object-Oriented programming is a Class.
 - It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class(OBJECT)
 - A class is like a blueprint for an object.
+- If empty class the size of the class will be 1.
+- if variables inside class are int(4 bit) + char(1 bit) then the size of class will NOT BE 5 it will be 8 DUE TO PADDING
 
  ## OBJECT
  - Object is an instance of class.
@@ -75,6 +77,8 @@ void Geeks::printname()
 - A Copy Constructor creates a new object, which is an exact copy of the existing object. The compiler provides a default Copy Constructor to all the classes.
 - SYNTAX = class-name (class-name &){}
 - THIS keyword -> is used to refer the current instance of class.
+![image](https://github.com/pratt0007/TIL/assets/100209212/6a62aee1-f8c2-4839-8b87-a1c29aecba16)
+
 ```CPP
 class Geeks
 {
@@ -128,3 +132,54 @@ public:
 - The protected access modifier is similar to the private access modifier in the sense that it can’t be accessed outside of its class unless with the help of a friend class.
 -  The difference is that the class members declared as Protected can be accessed by any subclass (derived class) of that class as well. 
 
+## Friend Class - 
+- A friend class can access private and protected members of other classes in which it is declared as a friend.
+- It is sometimes useful to allow a particular class to access private and protected members of other classes.
+- syntax -> friend class class_name;    // declared in the base class
+```cpp
+using namespace std;
+ 
+class GFG {
+private:
+    int private_variable;
+ 
+protected:
+    int protected_variable;
+ 
+public:
+    GFG()
+    {
+        private_variable = 10;
+        protected_variable = 99;
+    }
+ 
+    // friend class declaration
+    friend class F;
+};
+ 
+class F {
+public:
+    void display(GFG& t)
+    {
+        cout << "The value of Private Variable = "
+             << t.private_variable << endl;
+        cout << "The value of Protected Variable = "
+             << t.protected_variable;
+    }
+};
+
+```
+## Friend Function
+- Like a friend class, a friend function can be granted special access to private and protected members of a class in C++. 
+- They are the non-member functions that can access and manipulate the private and protected members of the class for they are declared as friends.
+
+
+## The 4 Pillars Of OOPS
+### 1. ENCAPSULATION
+- Encapsulation in C++ is defined as the wrapping up of data and information in a single unit.
+- In Object Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulate them.
+- Two Important  property of Encapsulation
+  	- 1.Data Protection: Encapsulation protects the internal state of an object by keeping its data members private.
+  	-  Access to and modification of these data members is restricted to the class’s public methods, ensuring controlled and secure data manipulation
+  	-  2. Information Hiding: Encapsulation hides the internal implementation details of a class from external code.
+  
