@@ -1,4 +1,4 @@
-![image](https://github.com/pratt0007/TIL/assets/100209212/b6ad38d3-ae04-4ef1-99dc-b45fe891c99d)# OOPS 
+# OOPS 
 - As the name suggests uses objects in programming.
 - Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc. in programming.
 - The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
@@ -279,4 +279,5 @@ int main(void)
 }
 ```
 output = BLACK
+![image](https://github.com/pratt0007/TIL/assets/100209212/b6ad38d3-ae04-4ef1-99dc-b45fe891c99d)
 
