@@ -1,4 +1,4 @@
-# OOPS 
+![image](https://github.com/pratt0007/TIL/assets/100209212/b6ad38d3-ae04-4ef1-99dc-b45fe891c99d)# OOPS 
 - As the name suggests uses objects in programming.
 - Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc. in programming.
 - The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
@@ -181,5 +181,101 @@ public:
 - Two Important  property of Encapsulation
   	- 1.Data Protection: Encapsulation protects the internal state of an object by keeping its data members private.
   	-  Access to and modification of these data members is restricted to the class’s public methods, ensuring controlled and secure data manipulation
-  	-  2. Information Hiding: Encapsulation hides the internal implementation details of a class from external code.
-  
+  	- 2. Information Hiding: Encapsulation hides the internal implementation details of a class from external code.
+- Encapsulation also leads to data abstraction. Using encapsulation also hides the data, as in the above example, the data of the sections like sales, finance, or accounts are hidden from any other section.
+![image](https://github.com/pratt0007/TIL/assets/100209212/a919f234-ea06-42de-ae23-9beabc4d36c8)
+
+#### Data Abstraction 
+- Encapsulation also leads to data abstraction.
+- Using encapsulation also hides the data, as in the above example, the data of the sections like sales, finance, or accounts are hidden from any other section.
+- It reduces the complexity of the program by hiding the implementation complexities of programs.
+
+## POLYMORPHISM
+- The word “polymorphism” means having many forms.
+- In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form.
+![image](https://github.com/pratt0007/TIL/assets/100209212/64af92ba-b914-46b8-a522-afa4c58e016b)
+### 1. Compile-Time Polymorphism
+- 1. Compile-Time Polymorphism
+	- When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, hence this is known as Function Overloading.
+ 	- Functions can be overloaded by changing the number of arguments or/and changing the type of arguments.
+```cpp
+class Geeks {
+public:
+    // Function with 1 int parameter
+    void func(int x)
+    {
+        cout << "value of x is " << x << endl;
+    }
+ 
+    // Function with same name but
+    // 1 double parameter
+    void func(double x)
+    {
+        cout << "value of x is " << x << endl;
+    }
+ 
+    // Function with same name and
+    // 2 int parameters
+    void func(int x, int y)
+    {
+        cout << "value of x and y is " << x << ", " << y
+             << endl;
+    }
+};
+```
+- 2. Operator Overloading
+	- C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading.
+```cpp
+class Complex {
+private:
+    int real, imag;
+ 
+public:
+    Complex(int r = 0, int i = 0)
+    {
+        real = r;
+        imag = i;
+    }
+ 
+    // This is automatically called
+    // when '+' is used with between
+    // two Complex objects
+    Complex operator+(Complex const& obj)
+    {
+        Complex res;
+        res.real = real + obj.real;
+        res.imag = imag + obj.imag;
+        return res;
+    }
+    void print() { cout << real << " + i" << imag << endl; }
+};
+```
+### 2. Runtime Polymorphism
+- This type of polymorphism is achieved by Function Overriding.
+- Late binding and dynamic polymorphism are other names for runtime polymorphism.
+- The function call is resolved at runtime in runtime polymorphism.
+- 1. Function Overriding - This type of polymorphism is achieved by Function Overriding.
+	-  Late binding and dynamic polymorphism are other names for runtime polymorphism.
+ 	- The function call is resolved at runtime in runtime polymorphism.
+![image](https://github.com/pratt0007/TIL/assets/100209212/4fe9fa51-7405-42a8-b14c-e1a4847c74e6)
+```cpp
+class Animal {
+public:
+    string color = "Black";
+};
+ 
+// inheriting Animal class.
+class Dog : public Animal {
+public:
+    string color = "Grey";
+};
+ 
+// Driver code
+int main(void)
+{
+    Animal d = Dog(); // accessing the field by reference
+                      // variable which refers to derived
+    cout << d.color;
+}
+```cpp
+output = BLACK
