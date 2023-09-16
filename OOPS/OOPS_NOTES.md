@@ -277,5 +277,6 @@ int main(void)
                       // variable which refers to derived
     cout << d.color;
 }
-```cpp
+```
 output = BLACK
+
