@@ -299,4 +299,98 @@ output = BLACK
 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/e78f9612-8b3b-44b0-8a12-295c6119dbd4)
 
+### Types Of Inheritance:-
+1. Single inheritance
+2. Multilevel inheritance
+3. Multiple inheritance
+4. Hierarchical inheritance
+5. Hybrid inheritance
+
+#### 1. Single Inheritance: 
+- In single inheritance, a class is allowed to inherit from only one class. i.e. one subclass is inherited by one base class only.
+![image](https://github.com/pratt0007/TIL/assets/100209212/67caa5f4-df33-40e4-acc8-eea0c8cbb5eb)
+```cpp
+class Vehicle {
+  public:
+    Vehicle()
+    {
+      cout << "This is a Vehicle\n";
+    }
+};
+  
+// sub class derived from a single base classes
+class Car : public Vehicle {
+  
+};
+```
+#### 2. Multiple Inheritance:
+- Multiple Inheritance is a feature of C++ where a class can inherit from more than one class. i.e one subclass is inherited from more than one base class.
+![image](https://github.com/pratt0007/TIL/assets/100209212/cc0f4c75-d3b9-40ad-851e-2c6f1c3404eb)
+```cpp
+class Vehicle {
+public:
+    Vehicle() { cout << "This is a Vehicle\n"; }
+};
+  
+// second base class
+class FourWheeler {
+public:
+    FourWheeler()
+    {
+        cout << "This is a 4 wheeler Vehicle\n";
+    }
+};
+  
+// sub class derived from two base classes
+class Car : public Vehicle, public FourWheeler {
+};
+```
+
+#### 3.  Multilevel Inheritance:
+- In this type of inheritance, a derived class is created from another derived class.
+![image](https://github.com/pratt0007/TIL/assets/100209212/4daf33ff-7818-4860-91c2-aec547b37286)
+```cpp
+class Vehicle {
+public:
+    Vehicle() { cout << "This is a Vehicle\n"; }
+};
+  
+// first sub_class derived from class vehicle
+class fourWheeler : public Vehicle {
+public:
+    fourWheeler()
+    {
+        cout << "Objects with 4 wheels are vehicles\n";
+    }
+};
+// sub class derived from the derived base class fourWheeler
+class Car : public fourWheeler {
+public:
+    Car() { cout << "Car has 4 Wheels\n"; }
+};
+```
+#### 4. Hierarchical Inheritance: 
+- In this type of inheritance, more than one subclass is inherited from a single base class. i.e. more than one derived class is created from a single base class.
+![image](https://github.com/pratt0007/TIL/assets/100209212/2b349598-f0de-4d4a-bf96-b8626b22ea38)
+```cpp
+class Vehicle {
+public:
+    Vehicle() { cout << "This is a Vehicle\n"; }
+};
+  
+// first sub class
+class Car : public Vehicle {
+};
+  
+// second sub class
+class Bus : public Vehicle {
+};
+```
+
+#### 5. Hybrid (Virtual) -
+- Inheritance: Hybrid Inheritance is implemented by combining more than one type of inheritance. For example: Combining Hierarchical inheritance and Multiple Inheritance.
+![image](https://github.com/pratt0007/TIL/assets/100209212/26a6839f-82a6-4b2b-ab38-e7e3278371c1)
+
+
+
 
