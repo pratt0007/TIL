@@ -254,10 +254,8 @@ public:
 - This type of polymorphism is achieved by Function Overriding.
 - Late binding and dynamic polymorphism are other names for runtime polymorphism.
 - The function call is resolved at runtime in runtime polymorphism.
-- 1. Function Overriding - This type of polymorphism is achieved by Function Overriding.
-	-  Late binding and dynamic polymorphism are other names for runtime polymorphism.
- 	- The function call is resolved at runtime in runtime polymorphism.
-![image](https://github.com/pratt0007/TIL/assets/100209212/4fe9fa51-7405-42a8-b14c-e1a4847c74e6)
+-
+
 ```cpp
 class Animal {
 public:
@@ -280,4 +278,25 @@ int main(void)
 ```
 output = BLACK
 ![image](https://github.com/pratt0007/TIL/assets/100209212/b6ad38d3-ae04-4ef1-99dc-b45fe891c99d)
+
+#### Virtual Functions
+- It is a member function that is declared in the base class using the keyword virtual and is re-defined (Overridden) in the derived class.
+- The main thing to note about the program is that the derived class’s function is called using a base class pointer.
+- Virtual functions allow us to create a list of base class pointers and call methods of any of the derived classes without even knowing the kind of derived class object.
+![image](https://github.com/pratt0007/TIL/assets/100209212/09a3249a-1820-4096-bcc3-a5615e217e37)
+
+
+## INHERITANCE
+- The capability of a class to derive properties and characteristics from another class is called Inheritance.
+- Inheritance is a feature or a process in which, new classes are created from the existing classes.
+- The new class created is called “derived class” or “child class” and the existing class is known as the “base class” or “parent class”.
+- Modes of Inheritance: There are 3 modes of inheritance.
+#### 3 Modes   
+- Public Mode: If we derive a subclass from a public base class. Then the public member of the base class will become public in the derived class and protected members of the base class will become protected in the derived class.
+- Protected Mode: If we derive a subclass from a Protected base class. Then both public members and protected members of the base class will become protected in the derived class.
+- Private Mode: If we derive a subclass from a Private base class. Then both public members and protected members of the base class will become Private in the derived class.
+- Note: The private members in the base class cannot be directly accessed in the derived class, while protected members can be directly accessed.
+
+![image](https://github.com/pratt0007/TIL/assets/100209212/e78f9612-8b3b-44b0-8a12-295c6119dbd4)
+
 
