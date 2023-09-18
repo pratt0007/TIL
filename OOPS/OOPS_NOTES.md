@@ -370,7 +370,10 @@ public:
 };
 ```
 #### 4. Hierarchical Inheritance: 
-- In this type of inheritance, more than one subclass is inherited from a single base class. i.e. more than one derived class is created from a single base class.
+- In this type of inheritance, more than one subclass is inherited from a single base class.
+-  i.e. more than one derived class is created from a single base class.
+
+
 ![image](https://github.com/pratt0007/TIL/assets/100209212/2b349598-f0de-4d4a-bf96-b8626b22ea38)
 ```cpp
 class Vehicle {
@@ -388,9 +391,137 @@ class Bus : public Vehicle {
 ```
 
 #### 5. Hybrid (Virtual) -
-- Inheritance: Hybrid Inheritance is implemented by combining more than one type of inheritance. For example: Combining Hierarchical inheritance and Multiple Inheritance.
+- Inheritance: Hybrid Inheritance is implemented by combining more than one type of inheritance.
+- For example: Combining Hierarchical inheritance and Multiple Inheritance.
+
 ![image](https://github.com/pratt0007/TIL/assets/100209212/26a6839f-82a6-4b2b-ab38-e7e3278371c1)
 
+### Ambiguity in Inheritance 
+#### 1. Multiple Inheritance:
+- C++ allows a class to inherit from multiple base classes.
+- When a derived class inherits from two or more base classes that have a common member with the same name, it can lead to ambiguity when accessing that member.
 
+```cpp
+class Base1 {
+public:
+    void foo() { /* ... */ }
+};
 
+class Base2 {
+public:
+    void foo() { /* ... */ }
+};
+
+class Derived : public Base1, public Base2 {
+};
+
+int main() {
+    Derived d;
+    d.foo(); // This will result in an ambiguity error.
+    return 0;
+}
+```
+- In this example, calling d.foo() is ambiguous because the Derived class has inherited the foo function from both Base1 and Base2.
+
+#### 2. Name Collision:
+- Ambiguity can also occur if the derived class defines a member with the same name as a member in one or more base classes.
+- This can lead to confusion about which member is being referred to.
+
+```cpp
+class Base {
+public:
+    void commonFunction() { /* ... */ }
+};
+
+class Derived : public Base {
+public:
+    void commonFunction() { /* ... */ } // Ambiguity
+};
+
+int main() {
+    Derived d;
+    d.commonFunction(); // This will result in an ambiguity error.
+    return 0;
+}
+```
+- In this case, calling d.commonFunction() is ambiguous because both the base class Base and the derived class Derived have a member with the same name.
+
+#### 3. Virtual Inheritance:
+- Virtual inheritance is used to address issues related to multiple inheritance.
+- When virtual inheritance is used, it can still lead to ambiguity if there is a diamond-shaped inheritance hierarchy (a common issue in multiple inheritance scenarios).
+```cpp
+class A {
+public:
+    void foo() { /* ... */ }
+};
+
+class B : virtual public A {
+};
+
+class C : virtual public A {
+};
+
+class D : public B, public C {
+};
+
+int main() {
+    D d;
+    d.foo(); // This will work without ambiguity due to virtual inheritance.
+    return 0;
+}
+```
+### There are 2 Ways to Avoid this Ambiguity: 
+#### 1. scope resolution operator: -
+	- Using the scope resolution operator we can manually specify the path from which data member a will be accessed
+ ```CPP
+obj.ClassB::a = 10;	 // Statement 3
+obj.ClassC::a = 100;	 // Statement 4
+```
+
+#### 2. Virtual Keyword
+- you can use explicit scoping or use the virtual keyword when appropriate.
+  ``` cpp
+  #include<iostream>
+
+class ClassA
+{
+public:
+	int a;
+};
+
+class ClassB : virtual public ClassA
+{
+public:
+	int b;
+};
+
+class ClassC : virtual public ClassA
+{
+public:
+	int c;
+};
+
+class ClassD : public ClassB, public ClassC
+{
+public:
+	int d;
+};
+
+int main()
+{
+	ClassD obj;
+
+	obj.a = 10;	 // Statement 3
+	obj.a = 100;	 // Statement 4
+
+	obj.b = 20;
+	obj.c = 30;
+	obj.d = 40;
+
+	cout << "\n a : " << obj.a;
+	cout << "\n b : " << obj.b;
+	cout << "\n c : " << obj.c;
+	cout << "\n d : " << obj.d << '\n';
+}
+```
 
