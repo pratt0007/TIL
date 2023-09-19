@@ -118,4 +118,74 @@ SELECT * FROM EmployeeView;
 
 Views are a powerful feature in SQL databases because they enable you to manage and present data in a way that suits your specific needs, while also providing a level of abstraction and data security.
 
-  
+## Questions
+### 1. select 2nd highest salary from the table employee 
+```
+SELECT DISTINCT salary
+FROM employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+```
+- Here limit 1 gives us the number of record that we have to return.
+- OFFSET 1 ignores the first record and returns the 2nd one.
+
+### 2. display the highest payed employees in each department
+1. If tables are different
+```
+SELECT e1.department_id, e1.employee_id, e1.employee_name, e1.salary
+FROM employee e1
+INNER JOIN (
+    SELECT department_id, MAX(salary) AS max_salary
+    FROM employee
+    GROUP BY department_id
+) e2 ON e1.department_id = e2.department_id AND e1.salary = e2.max_salary;
+```
+2. If same table
+```
+SELECT MAX(sal), dept
+FROM employee
+GROUP BY dept;
+```
+
+### 3. Display Alternate record
+```
+SELECT *
+FROM your_table
+WHERE (ROW_NUMBER() % 2) = 1;
+```
+- It uses the ROW_NUMBER() window function to assign a unique row number to each row in the result set.
+### 4. Diaplay only those entries whose freq > 1(DUPLICATE)
+```
+SELECT ename , count(*)
+FROM emp
+GROUP BY ename
+HAVING count(*)>1;
+```
+Having clause
+### 5. Pattern Matching - Return Name start with M
+```
+SELECT ename FROM emp
+WHERE ename LIKE 'M%'
+```
+- % Cover 0 or more characters while _ matches only one character.
+
+### 6. Difference btw UNION and UNION ALL
+- for union
+     - The select statement should have samen number of col
+     - Similar or compatible datatype.
+     - Same logical order
+```
+SELECT city FROM sampel1;
+UNION
+SELCET city FROM sample2;
+```
+- This will gives only unique values from both the tables and if the entry is repeated the output will be shown only once.
+
+```
+SELECT city FROM sampel1;
+UNION ALL
+SELCET city FROM sample2;
+```
+- This will display all the values including duplicates.
+
+### 7. 
