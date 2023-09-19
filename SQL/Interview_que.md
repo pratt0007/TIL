@@ -188,4 +188,43 @@ SELCET city FROM sample2;
 ```
 - This will display all the values including duplicates.
 
-### 7. 
+### 7. SELF JOIN
+- Self join is used when you have to compare data of the tabke with the same table data
+- For eg  getting No of employees whose salary of greater than of their manager.
+
+### 10. Display first n or last n rows in sql
+FIRST N
+```
+SELECT *
+FROM your_table
+LIMIT n;
+```
+LAST N
+```
+SELECT *
+FROM your_table
+ORDER BY your_column DESC
+LIMIT n;
+```
+
+### 9. Nth highest salary
+```
+SELECT DISTINCT salary
+FROM employee
+ORDER BY salary DESC
+LIMIT n-1, 1;
+```
+
+### INTERSECT
+- The INTERSECT operator in SQL is used to retrieve the common records or rows from two or more SELECT statements.
+-  It returns only the rows that appear in the result sets of both queries. In other words, it finds the intersection of the result sets.
+-  Gives the intersection of both the datas.
+  ```
+SELECT column1, column2, ...
+FROM table1
+INTERSECT
+SELECT column1, column2, ...
+FROM table2;
+```
+
+
