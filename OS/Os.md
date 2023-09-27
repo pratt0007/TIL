@@ -30,3 +30,31 @@
 
 ### How a mordern computer system works
 ![image](https://github.com/pratt0007/TIL/assets/100209212/d1ed55a4-514a-45e5-bb0f-4a8d5c2a570d)
+
+### Process Management 
+- Scheduling processes and threads on the CPUs
+- Creating and deleting both user and system processes
+- Suspending and resuming processes
+- Providing mechanisms for process synchronization
+- Providing mechanisms for process communication
+
+### Memory Management 
+- Keeping track of which parts of memory are currently being used and who is using them
+- Deciding which processes (or parts of processes) and data to move into and out of memory
+- Allocating and deallocating memory space as needed
+
+### Storage  Management
+  #### File Management
+    - Creating and deleting ﬁles.
+    - Creating and deleting directories to organize ﬁles
+    - Supporting primitives for manipulating ﬁles and directories
+    - Mapping ﬁles onto secondary storage
+    - Backing up ﬁles on stable (nonvolatile) storage media
+  #### Caching
+  - Information is normally kept in some storage system (such as main memory).
+  - As it is used, it is copied into a faster storage system — the cache — on atemporary basis.
+  - When we need a particular piece of information, we ﬁrst check whether it is in the cache.
+  #### I/O Systems
+  - A memory-managementcomponent that includes buffering,caching,and spooling
+  - Ageneraldevice-driverinterface
+  - Drivers for speciﬁc hardware devices
