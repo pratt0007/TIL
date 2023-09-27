@@ -24,3 +24,9 @@
 -  Neumann architecture,ﬁrst fetches an instruction from memory and stores that instruction in the instruction register.
 -  The instruction is then decoded and may cause operands to be fetched from memory and stored in some internal register.
 -   After the instruction on the operands has been executed, the result may be stored back in memory. 
+
+![Screenshot 2023-09-27 204116](https://github.com/pratt0007/TIL/assets/100209212/d0d0be73-4aa3-4ee7-b057-35d55aef80b9)
+
+
+### How a mordern computer system works
+![image](https://github.com/pratt0007/TIL/assets/100209212/d1ed55a4-514a-45e5-bb0f-4a8d5c2a570d)
