@@ -977,8 +977,9 @@ ModelClassName.obiects.all()
 - First import your own model class from models.py
 ```python
 # views.py
-from enroll. models import Student def studentinfo(request):
-stud = Student.objects.allo
+from enroll. models import Student
+def studentinfo(request):
+stud = Student.objects.all()
 return render(request, 'enroll/studetails.html', {'stu':stud})
 ```
 
