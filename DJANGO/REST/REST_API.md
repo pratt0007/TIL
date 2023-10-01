@@ -14,3 +14,7 @@
 - PUT It takes the new records at the given URI. If the record exists, update the record. If record is not available, create a new record.
 - PATCH It takes one or more fields at the given URI. It is used to update one or more data fields. If the record exists, update the record. If the record is not available, create a new record.
 - DELETE It deletes the records at the given URI.
+
+### What is Django Rest Framework?
+- Django Rest Framework (DRF) is a package built on the top of Django to create web APIs. It provides the most extensive features of Django, Object Relational Mapper (ORM), which allows the interaction of databases in a Pythonic way.
+- Hence the Python object can't be sent over the network, so we need to translate Django models into the other formats like JSON, XML, and vice-versa. This process is known as serialization, which the Django REST framework made super easy.
