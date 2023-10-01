@@ -878,7 +878,8 @@ urlpatterns = [ path('about/', views.about, name='aboutus'),]
 - `models.py` file which is inside application folder, is required to create our own model class.
 - Our own model class will inherit Python's Model Class.
 - **Rule for Field_Name:**
-  - It is a class attribute representing a table's column name, while Field Type denotes the data type. Field names cannot be Python-reserved words, contain consecutive underscores, or end with an underscore.
+  - It is a class attribute representing a table's column name, while Field Type denotes the data type.
+  -  Field names cannot be Python-reserved words, contain consecutive underscores, or end with an underscore.
 
 ```python
 # Syntax:
@@ -935,7 +936,7 @@ Syntax:- python manage.py migrate
 
 > Note: If you make any change in your own model class you are required to run makemigrations and migrate command only then you will get those changes in your application.
 
-- **sqlmigrate:** This displays the SQL statements for a migration.
+-    **sqlmigrate:** This displays the SQL statements for a migration.
 
 #### To Display SQL Statement:
 ```python
@@ -957,6 +958,9 @@ python manage.py sqlmigrate enroll 0001
 - More information about [Model Operations](https://github.com/IshaanAdarsh/TIL/blob/main/Django/Detailed%20Information/Model-Operations.md)
 
 - **showmigrations:** This lists a project's migrations and their status.
+
+#### Geeky Steps for Making Models
+![image](https://github.com/pratt0007/TIL/assets/100209212/62b45406-a103-42fa-8265-d380ae93a4f2)
 
 ### Retrieve Database Table Data to User:
 - Writing Code to get data from database in views.py then pass it to template files using render function
