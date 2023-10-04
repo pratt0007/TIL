@@ -1399,5 +1399,9 @@ name=forms.CharField(error messages={'required': 'Enter Your Name' })
 ![image](https://github.com/pratt0007/TIL/assets/100209212/66a4775e-4978-4ad9-8299-c8d099c30a7b)
 
 - We need CSRF token and verification to use POST method.
-- Add {% csrf_token%} in your form to verify.
-- 
+- Add {% csrf_token%} inside your form in HTML page to verify.
+- Django provides CSRF Protection with crsf token which we need to add inside form tag. This token will add a hidden input field with random value in form tag.
+```
+![image](https://github.com/pratt0007/TIL/assets/100209212/106cd7fd-b259-4c5f-ac16-062d1394fbaf)
+```
+
