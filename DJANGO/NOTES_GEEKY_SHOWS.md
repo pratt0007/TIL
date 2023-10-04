@@ -1374,6 +1374,8 @@ name=forms.CharField(error messages={'required': 'Enter Your Name' })
   - We set the method to `post` and we include a CSRF token int the form to verify the form
 
 #### Cross Site Request Forgery (CSRF) Token:
+- A Cross-site request forgery hole is when a malicious site can cause a visitor's browser to make a request to your server that causes a change on the server.
+-  The server thinks that because the request comes with the user's cookies, the user wanted to submit that form.
 - Django provides CSRF Protection with csrf_token which we need to add inside form tag. This token will add a hidden input field with random value in form tag. 
 ```html
 // templates/enroll/userregistration.html
