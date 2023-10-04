@@ -1374,8 +1374,7 @@ name=forms.CharField(error messages={'required': 'Enter Your Name' })
   - We set the method to `post` and we include a CSRF token int the form to verify the form
 
 #### Cross Site Request Forgery (CSRF) Token:
-- A Cross-site request forgery hole is when a malicious site can cause a visitor's browser to make a request to your server that causes a change on the server.
--  The server thinks that because the request comes with the user's cookies, the user wanted to submit that form.
+
 - Django provides CSRF Protection with csrf_token which we need to add inside form tag. This token will add a hidden input field with random value in form tag. 
 ```html
 // templates/enroll/userregistration.html
@@ -1388,4 +1387,17 @@ name=forms.CharField(error messages={'required': 'Enter Your Name' })
     </form>
   </body>
 </html>
-``` 
+```
+
+## CRSF 
+- A Cross-site request forgery hole is when a malicious site can cause a visitor's browser to make a request to your server that causes a change on the server.
+-  The server thinks that because the request comes with the user's cookies, the user wanted to submit that form.
+
+### Creating From using method POST and CRSF Token
+- If we make 2 columns in our table having NAME and EMAIL and in the HTML page we use GET method then after pressing the enter button the NAME and EMAIL will be visible in url which is not good for security reasons.
+- If we use POST method and then press eneter, we will get CSRF verificarion failed 
+![image](https://github.com/pratt0007/TIL/assets/100209212/66a4775e-4978-4ad9-8299-c8d099c30a7b)
+
+- We need CSRF token and verification to use POST method.
+- Add {% csrf_token%} in your form to verify.
+- 
