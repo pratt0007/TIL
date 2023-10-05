@@ -1401,7 +1401,20 @@ name=forms.CharField(error messages={'required': 'Enter Your Name' })
 - We need CSRF token and verification to use POST method.
 - Add {% csrf_token%} inside your form in HTML page to verify.
 - Django provides CSRF Protection with crsf token which we need to add inside form tag. This token will add a hidden input field with random value in form tag.
-```
+  
 ![image](https://github.com/pratt0007/TIL/assets/100209212/106cd7fd-b259-4c5f-ac16-062d1394fbaf)
-```
 
+### GET data 
+- How we can get the data that is stord in database when the user generate a request.
+#### How to send GET request
+• Open browser and write url hit enter this is by default get request
+• Anchor Tag
+• Form tag contains method='GET'
+• Form tag with specifying method is by default GET
+
+#### Django Form and Field Validation
+- is_valid() - This method is used to run validation and return a Boolean designating whether the data was valid as True or not as False. This returns True or False.
+- Syntax:- Form.is valid0
+- cleaned data - This attribute is used to access clean data. Each field in a Form class is responsible not only for validating data, but also for "cleaning" it normalizing it to a consistent format.
+- This is a nice feature, because it allows data for a particular field to be input in a variety of ways, always resulting in consistent output.
+-  Once you've created a Form instance with a set of data and validated it, you can access the clean data via its cleaned data attribute.
