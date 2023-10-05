@@ -1418,3 +1418,5 @@ name=forms.CharField(error messages={'required': 'Enter Your Name' })
 - cleaned data - This attribute is used to access clean data. Each field in a Form class is responsible not only for validating data, but also for "cleaning" it normalizing it to a consistent format.
 - This is a nice feature, because it allows data for a particular field to be input in a variety of ways, always resulting in consistent output.
 -  Once you've created a Form instance with a set of data and validated it, you can access the clean data via its cleaned data attribute.
+
+#### Get Django Form Data in Term
