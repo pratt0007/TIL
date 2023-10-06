@@ -8,5 +8,6 @@
 - Client sends regular HTTP request with an additional header to be requested.
 - The Server gets the HTTP request and notices the request for the Upgrade header.
 - This lets the Server know that we are requesting for a WebSocket connection.
-- If all goes well persistent connection established between client and server.
-Connection can be closed either by client or server.
+- If all goes well persistent connection established between client and server. Connection can be closed either by client or server.
+
+![image](https://github.com/pratt0007/TIL/assets/100209212/62480d24-beb8-4ccc-88ea-64f5cf8a2f45)
