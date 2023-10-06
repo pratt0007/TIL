@@ -14,6 +14,16 @@
 
 ### Where to use Web sockets
 - WebSockets is not a full-on replacement for the HTTP protocol so Whenever you need continuously real time data stream over the internet, whether it be client-to-server or server-to-client only then you should use Websocket.
+- Without page refresh we are getting live data like -
+      - Trading
+      - Live scores
 
 ### Where NOT to use Websocket:
 - Whenever you need old data or data only once you should not use Websocket rather you should use HTTP protocol.
+
+## AJAX vs WebSocket
+- When the traditional request-response is required then, Ajax can be used
+- When there is real-time communication involved and fast results are needed, then web sockets can be used.
+- In Ajax when you send a request, server sends response for that request and connection ends.
+- In WebSockets when you establish a connection with server, then you can communicate between client and server as much you want and it keeps connection alive.
+- 
