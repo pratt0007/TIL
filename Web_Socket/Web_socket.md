@@ -11,3 +11,9 @@
 - If all goes well persistent connection established between client and server. Connection can be closed either by client or server.
 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/62480d24-beb8-4ccc-88ea-64f5cf8a2f45)
+
+### Where to use Web sockets
+- WebSockets is not a full-on replacement for the HTTP protocol so Whenever you need continuously real time data stream over the internet, whether it be client-to-server or server-to-client only then you should use Websocket.
+
+### Where NOT to use Websocket:
+- Whenever you need old data or data only once you should not use Websocket rather you should use HTTP protocol.
