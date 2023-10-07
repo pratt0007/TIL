@@ -98,4 +98,9 @@
 ![image](https://github.com/pratt0007/TIL/assets/100209212/bf29261e-8c37-4848-9128-9f947a6084a0)
 - In this, multiple programs are kept and the CPU switches its processing on different processes if one is not available or goes for to I/O,
 - IMP - IN THIS AT A SINGLE TIME ONLY SINGLE PROCESS IS HANDLED NOT MULTIPLE.
+### 3. Multi Tasking
+![image](https://github.com/pratt0007/TIL/assets/100209212/db0b2480-cd7a-4c3b-94cb-fb486ff60ac7)
+- In one time only one process can be taken care of by one cpu
+-  
+
 
