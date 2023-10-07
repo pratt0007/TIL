@@ -85,4 +85,9 @@
 - Distributed
 - Real Time OS
 ### 1. Batch OS
+![image](https://github.com/pratt0007/TIL/assets/100209212/f7790f33-bbd3-4276-9ba4-fda19525d679)
+#### JOB-
+    - Program 
+    - I/P Data
+    - Control Instructions
 
