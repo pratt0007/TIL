@@ -12,7 +12,14 @@
 ### Goal of OS
 - Primary Goal - convienece and user friendly.
 - Secondary Gaol - efficiency
-  
+
+### Feature of Operating System 
+- Process management
+- memory management
+- I/0 device management
+- File management
+- Network Management
+- Security and protection
 
 ## Computer System (4 parts)
 - Hardware
