@@ -76,3 +76,12 @@
   - A memory-managementcomponent that includes buffering,caching,and spooling
   - Ageneraldevice-driverinterface
   - Drivers for speciﬁc hardware devices
+## Types of OS
+- Single Process OS
+- Batch OS
+- Multi programming
+- Multi tasking
+- Multi Processing
+- Distributed
+- Real Time OS
+- 
