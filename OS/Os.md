@@ -7,6 +7,8 @@
   - Resource Manager - Manage system resources in an unbaised fashion both for hardware and software.
   - Platform for applications, all the application will interact with OS not with the hardware directly.
 
+![image](https://github.com/pratt0007/TIL/assets/100209212/4dd69ed7-4f99-411e-946e-26cbbeff32f8)
+
 ## Computer System (4 parts)
 - Hardware
 - Operating System
