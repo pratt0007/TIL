@@ -9,6 +9,11 @@
 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/4dd69ed7-4f99-411e-946e-26cbbeff32f8)
 
+### Goal of OS
+- Primary Goal - convienece and user friendly.
+- Secondary Gaol - efficiency
+  
+
 ## Computer System (4 parts)
 - Hardware
 - Operating System
