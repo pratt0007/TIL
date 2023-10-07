@@ -94,3 +94,8 @@
 - Speed mismatch between the I/P receiving and O/p generation leading to latency.
 - No prioritization between Jobs
 
+### 2. MULTI-PROGRAMMING
+![image](https://github.com/pratt0007/TIL/assets/100209212/bf29261e-8c37-4848-9128-9f947a6084a0)
+- In this, multiple programs are kept and the CPU switches its processing on different processes if one is not available or goes for to I/O,
+- IMP - IN THIS AT A SINGLE TIME ONLY SINGLE PROCESS IS HANDLED NOT MULTIPLE.
+
