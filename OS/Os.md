@@ -90,4 +90,7 @@
     - Program 
     - I/P Data
     - Control Instructions
+#### Drawbacks of Batch Processing
+- Speed mismatch between the I/P receiving and O/p generation leading to latency.
+- No prioritization between Jobs
 
