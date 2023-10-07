@@ -84,4 +84,5 @@
 - Multi Processing
 - Distributed
 - Real Time OS
-- 
+### 1. Batch OS
+
