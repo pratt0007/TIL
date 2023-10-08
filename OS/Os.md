@@ -101,6 +101,18 @@
 ### 3. Multi Tasking
 ![image](https://github.com/pratt0007/TIL/assets/100209212/db0b2480-cd7a-4c3b-94cb-fb486ff60ac7)
 - In one time only one process can be taken care of by one cpu
--  
+
+### Virtual Memory Concept
+#### Process State
+ ![image](https://github.com/pratt0007/TIL/assets/100209212/afccf626-434c-4d23-ac1c-6b0a65e72780)
+ - There are basic 5 block-
+     - New - When we store a file in the secondary memeory. Just storing the code.
+     - Ready - When we run the code the fetched from the secondary mem to primary (RAM) or The Ready Queue. 
+     - Running - Running is the state when the process from the ready queue(RAM) is given to the CPU.
+     - Wait Block- It is the waiting queue when the process goes for I/O  or Interrupt comes, or the process with higher priority comes.
+     - Terminate - When the logic or code is excecuted.
+
+
+
 
 
