@@ -115,7 +115,13 @@
      - Terminate - When the logic or code is excecuted.
 - There is a suspended wait system attached to the wair block queue which is inside the ram only, if the wait block queue if full then some of the process go in Suspended wait which is present in th secondary memory
 - Similar to this is on ready queue.
-- 
+
+### Process Control Block(PCB)
+- Each process is represented in the operating system by a process control block (PCB) —also called a task control block.
+![image](https://github.com/pratt0007/TIL/assets/100209212/80334e57-8876-4572-9ab5-63bdc13855b4)
+![image](https://github.com/pratt0007/TIL/assets/100209212/547ef16a-e2a7-4301-b1b1-225c2718a2cd)
+![image](https://github.com/pratt0007/TIL/assets/100209212/fcd6971d-414d-4a46-86ab-9e4eaf041d7c)
+
 
 
 
