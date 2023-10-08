@@ -104,6 +104,8 @@
 
 ### Virtual Memory Concept
 #### Process State
+![image](https://github.com/pratt0007/TIL/assets/100209212/f760fa80-4943-4e4f-b29d-23e5f66e2a0b)
+
  ![image](https://github.com/pratt0007/TIL/assets/100209212/afccf626-434c-4d23-ac1c-6b0a65e72780)
  - There are basic 5 block-
      - New - When we store a file in the secondary memeory. Just storing the code.
