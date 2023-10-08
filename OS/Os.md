@@ -111,7 +111,9 @@
      - Running - Running is the state when the process from the ready queue(RAM) is given to the CPU.
      - Wait Block- It is the waiting queue when the process goes for I/O  or Interrupt comes, or the process with higher priority comes.
      - Terminate - When the logic or code is excecuted.
-
+- There is a suspended wait system attached to the wair block queue which is inside the ram only, if the wait block queue if full then some of the process go in Suspended wait which is present in th secondary memory
+- Similar to this is on ready queue.
+- 
 
 
 
