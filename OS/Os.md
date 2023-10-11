@@ -122,11 +122,15 @@
 ![image](https://github.com/pratt0007/TIL/assets/100209212/547ef16a-e2a7-4301-b1b1-225c2718a2cd)
 ![image](https://github.com/pratt0007/TIL/assets/100209212/fcd6971d-414d-4a46-86ab-9e4eaf041d7c)
 
-## Thread
-- The process model discussed so far has implied that a process is a program that performs a single thread of execution.
+### System Call
+- File Related : access open , read, write , close , create etc
+- Device Related system calls - Hard disk , monitor , pendrive
+- Information Related system call
+-  To acces all this we need to go in kernel mode.
+-  In Linux we direct apply system call but in Windows and all we have APIs. We call function and then function calls the system.
+-  system call invoke the kernel to do the job.
+
+#### FORK System Call
 - 
-
-
-
 
 
