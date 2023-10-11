@@ -131,6 +131,10 @@
 -  system call invoke the kernel to do the job.
 
 #### FORK System Call
-- 
-
+- This call is made to create a child process. The child process will be clone of parent prcoess with only different ID.
+- Child process does the job when the parent process if busy.
+- If we fork any process, then simultaneously the parent and child prcoess works on different task.
+- If we fork then child ID is 0 (If created) if ID = -1 then fork is not done. 
+![image](https://github.com/pratt0007/TIL/assets/100209212/f5bd10b8-1427-4b66-90d3-44ccf2170895)
+### User mode and Kernel Mode
 
