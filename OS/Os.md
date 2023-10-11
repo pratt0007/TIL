@@ -137,4 +137,6 @@
 - If we fork then child ID is 0 (If created) if ID = -1 then fork is not done. 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/f5bd10b8-1427-4b66-90d3-44ccf2170895)
 ### User mode and Kernel Mode
-
+-  User mode : We cant directly access the hardware of the system, hence we give command to kernel.
+-  The kernel mode interacts with the hardware and then gives the 0/P.
+![image](https://github.com/pratt0007/TIL/assets/100209212/0fd1fe64-c7ab-4750-9aba-9672c6cdda5d)
