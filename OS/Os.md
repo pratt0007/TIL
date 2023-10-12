@@ -108,7 +108,7 @@
 
  ![image](https://github.com/pratt0007/TIL/assets/100209212/afccf626-434c-4d23-ac1c-6b0a65e72780)
  - There are basic 5 block-
-     - New - When we store a file in the secondary memeory. Just storing the code.
+     - New - When we store a file in the secondary memory. Just storing the code.
      - Ready - When we run the code the fetched from the secondary mem to primary (RAM) or The Ready Queue. 
      - Running - Running is the state when the process from the ready queue(RAM) is given to the CPU.
      - Wait Block- It is the waiting queue when the process goes for I/O  or Interrupt comes, or the process with higher priority comes.
@@ -140,11 +140,26 @@
 -  User mode : We cant directly access the hardware of the system, hence we give command to kernel.
 -  The kernel mode interacts with the hardware and then gives the 0/P.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/0fd1fe64-c7ab-4750-9aba-9672c6cdda5d)
-
+### Scheduling Queues
+- As processes enter the system, they are put into a job queue,whichconsists of all processes in the system.
+- The processes that are residing in main memory and are ready and waiting to execute are kept on a list called the ready queue.
+- This queue is generally stored as a linked list.
+-  A ready-queue header contains pointers to the ﬁrst and ﬁnal PCBs in the list
+-  EachPCB includes a pointer ﬁeld that points to the next PCB in the ready queue.
+### Threads
+- The process model discussed so far has implied that a process is a program that performs a single thread of execution
+- For example, when a process is running aword processor program,asing leth read of instructions is being executed.
+- 
 ### Process Vs Threads
 ![image](https://github.com/pratt0007/TIL/assets/100209212/66e282d2-5d08-4bc2-89f2-6af742ad0af4)
 #### User Level Thred and Kernel Level thread 
  ![image](https://github.com/pratt0007/TIL/assets/100209212/9efd0920-bf36-4d64-8aed-e66ccb3affd2)
+
+ ## CPU SCHEDULING
+ - A process excecution consist of a cycle of CPU execution and I/O execution.
+ - Normally every process starts with CPU burst and then if required goes to I/o.
+
+ 
 
 
 
