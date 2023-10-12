@@ -143,6 +143,9 @@
 
 ### Process Vs Threads
 ![image](https://github.com/pratt0007/TIL/assets/100209212/66e282d2-5d08-4bc2-89f2-6af742ad0af4)
+#### User Level Thred and Kernel Level thread 
+ ![image](https://github.com/pratt0007/TIL/assets/100209212/9efd0920-bf36-4d64-8aed-e66ccb3affd2)
+
 
 
 
