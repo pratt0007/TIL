@@ -116,7 +116,7 @@
 - There is a suspended wait system attached to the wair block queue which is inside the ram only, if the wait block queue if full then some of the process go in Suspended wait which is present in th secondary memory
 - Similar to this is on ready queue.
 
-### Process Control Block(PCB)
+### Process Control Block (PCB)
 - Each process is represented in the operating system by a process control block (PCB) —also called a task control block.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/80334e57-8876-4572-9ab5-63bdc13855b4)
 ![image](https://github.com/pratt0007/TIL/assets/100209212/547ef16a-e2a7-4301-b1b1-225c2718a2cd)
@@ -146,7 +146,19 @@
 - This queue is generally stored as a linked list.
 -  A ready-queue header contains pointers to the ﬁrst and ﬁnal PCBs in the list
 -  EachPCB includes a pointer ﬁeld that points to the next PCB in the ready queue.
+-  The list of processes waiting for a particular I/O device is called a device queue.
+  
+
+![image](https://github.com/pratt0007/TIL/assets/100209212/4b85a408-1314-490b-b2a6-7aa92abc8265)
+
+### Context Swiching
+- interrupts cause the operating system to change a CPU from its current task and to run a kernel routine.
+- When an interrupt occurs, the system needs to save the current context of the process running on the CPU so that it can restore that context when its processing is done.
+- Switching the CPU to another process requires performing a state save of the current process and a state restore of a different process. This task is known as a context switch.
+ 
 ### Threads
+- A thread is a basic unit of CPU utilization; it comprises a thread ID,aprogram counter, a register set, and a stack.
+- it shares with other threads belonging to the same process its code section, data section, and other operating-system resources, such as open ﬁles and signals
 - The process model discussed so far has implied that a process is a program that performs a single thread of execution
 - For example, when a process is running aword processor program,asing leth read of instructions is being executed.
 - 
