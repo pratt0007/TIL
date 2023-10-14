@@ -5,8 +5,18 @@
 
 ## API 
 - An API is an acronym for Application Programming Interface, an interface that defines the interaction between different software components.
+- An API is a software intermediary that allows two or more applications to talk to
+each other.
 - Web APIs determine what exactly request is made to the component.
 - For example We define an endpoint to get the list of the students of a particular branch.
+### API types in terms of Release Policies:-
+- Private - It can be used within the organization.
+- Partner - It can be used within Business Partner.
+- Public It can be used by any 3rd part developer.
+
+### Web API
+![image](https://github.com/pratt0007/TIL/assets/100209212/e57a6292-a0aa-46e0-9db5-b8920cbcb37b).
+
 
 ### Keys of REST API
 - GET It is most common method for get some data from component. It returns some data from the API based on the endpoint we hit and any parameter we pass.
@@ -21,6 +31,7 @@ READ ----> GET
 UPDATE---> PUT
 DELETE---> DELETE
 ```
+![image](https://github.com/pratt0007/TIL/assets/100209212/1f7b98e3-7ca4-4a3b-9d41-664440589471)
 
 ### What is Django Rest Framework?
 - Django Rest Framework (DRF) is a package built on the top of Django to create web APIs. It provides the most extensive features of Django, Object Relational Mapper (ORM), which allows the interaction of databases in a Pythonic way.
