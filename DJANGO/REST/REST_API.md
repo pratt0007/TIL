@@ -1,4 +1,4 @@
-  # REST API
+    # REST API
 - REST is an acronym name of Representational State Transfer, a standardized way to provide data to other applications.
 - In other words, it is used for building and communicating with web services. It is the best way to transfer data across the applications and can be used by the application.
 - It mandates resources on the web are represented in JSON, HTML, or XML. Sometimes APIs are used in the other application to change the data.
@@ -38,4 +38,40 @@ DELETE---> DELETE
 ### What is Django Rest Framework?
 - Django Rest Framework (DRF) is a package built on the top of Django to create web APIs. It provides the most extensive features of Django, Object Relational Mapper (ORM), which allows the interaction of databases in a Pythonic way.
 - Hence the Python object can't be sent over the network, so we need to translate Django models into the other formats like JSON, XML, and vice-versa. This process is known as serialization, which the Django REST framework made super easy.
+
+ ![image](https://github.com/pratt0007/TIL/assets/100209212/c7b676b3-076e-41a5-8703-64e16fc484d5)
+
+#### Python JSON
+- Python has a built in package called json, which is used to work with json data.
+- dumps(data) is used to cinvert python object into json string.
+```python
+import json
+python_data = {'name' : sonam , 'roll':101}
+json_data = json.dumps(python_data)
+```
+##### Parsing JSON string
+- Parsing a JSON (JavaScript Object Notation) string means extracting structured data from a text-based format.
+- Things done
+    - Reading JSON
+    - CONVERTING to Data Structure
+    - Accesing Data
+```python
+import json
+
+# Sample JSON string
+json_str = '{"name": "John", "age": 30, "city": "New York"}'
+
+# Parse the JSON string into a Python dictionary
+data = json.loads(json_str)
+
+# Access data from the dictionary
+name = data['name']
+age = data['age']
+city = data['city']
+
+print(f"Name: {name}, Age: {age}, City: {city}")
+```
+
+
+
 
