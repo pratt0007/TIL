@@ -1,4 +1,4 @@
-# REST API
+  # REST API
 - REST is an acronym name of Representational State Transfer, a standardized way to provide data to other applications.
 - In other words, it is used for building and communicating with web services. It is the best way to transfer data across the applications and can be used by the application.
 - It mandates resources on the web are represented in JSON, HTML, or XML. Sometimes APIs are used in the other application to change the data.
@@ -24,6 +24,8 @@ each other.
 - PUT It takes the new records at the given URI. If the record exists, update the record. If record is not available, create a new record.
 - PATCH It takes one or more fields at the given URI. It is used to update one or more data fields. If the record exists, update the record. If the record is not available, create a new record.
 - DELETE It deletes the records at the given URI.
+- The API URL can not have HTTPS only HTTP is there
+- Eg http://geekyshows.com/api/student  is the url for studemt api
 
 ```
 CREATE --> POST
