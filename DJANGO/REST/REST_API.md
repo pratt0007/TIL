@@ -51,6 +51,7 @@ json_data = json.dumps(python_data)
 ```
 ##### Parsing JSON string
 - Parsing a JSON (JavaScript Object Notation) string means extracting structured data from a text-based format.
+- converting back data form KSON to python we require loads
 - Things done
     - Reading JSON
     - CONVERTING to Data Structure
@@ -71,6 +72,9 @@ city = data['city']
 
 print(f"Name: {name}, Age: {age}, City: {city}")
 ```
+## Serializers
+- In Django REST Framework, serializers are responsible for converting complex data such as querysets and model instances to native Python datatypes (called serialization) that can then be easily rendered into JSON, XML or other content types which is understandable by Front End.
+- Serializers are also responsible for deserialization which means it allows parsed data to be converted back into complex types, after first validating the incoming data.
 
 
 
