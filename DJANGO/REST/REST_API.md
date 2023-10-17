@@ -85,6 +85,9 @@ class StudentSerializer(serializers.Serializer):
  roll = serializers.IntegerFieldO
  city = serializers.CharField(max_length=100)
 ```
-
+- Here are main focus is to convert our data to JSON data so that it could be sent to the client.
+![image](https://github.com/pratt0007/TIL/assets/100209212/c502d9d3-ae14-4709-bc91-d35e58bc09d3)
+- Here we make models.py in django and we make a model in it which stores the data in dataabse in the form of a table. Now we need to transmit the data to our client for that first we need to concvert the data in JSON file.
+ 
 
 
