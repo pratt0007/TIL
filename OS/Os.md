@@ -175,18 +175,23 @@
 - 1. Non- primitive - When a process is running in CPU then no other process can come and terminate this current process. The process in the queue has to wait fot the event to end irrrspective of its priority.
   2. Primitive - High priority process gets the CPU form the low priorty process from the CPU
 
-### Criteria to judge a CPU Scheduling algo- 
+### Basic Defs- 
 - Burst Time/Execution Time/ Running Time - is the time process require for running on CPU
 - Waiting Time - time spend by a process in ready state waiting for CPU.
 - Arrival Time - When a prcoess enetrs ready queue
 - Exit time - When time process exits the system
 - Turn Ariund Time- tital time spend by a process in the system.
-      - TAT = EXIT TIME - ARRIVAL TIME
-      - TAT = BURST TIME + WAITING TIME
+  - TAT = EXIT TIME - ARRIVAL TIME
+  - TAT = BURST TIME + WAITING TIME
 - Response time - When a process enetrs a ready queue for the first time, then the time to get CPU from the rady queue for the first time is called response time.
 
-- 
-- 
+### Criteria to judge a CPU Scheduling algo-
+- Average wait time - Less avg waiting time, better the algo.
+- Average Response time - We can have more waiting time , but the priority of response time is more. The response time should be less.
+- CPU utilization
+- Through Put - Number of process exe per unit time.
+
+ 
  
 
 
