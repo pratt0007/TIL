@@ -93,14 +93,15 @@ class StudentSerializer(serializers.Serializer):
 ### Serialization
 - The process of converting complex data such as querrysets and model instances to native python datatypes are called serialization in DRF.
 - 1. Creating a model instance stu
-     ```PYTHON
      stu = Student.objects.get(id=1)
-     ```
   2. Converting model instance stu to python dic/ serializing object
-     ```python
      serializer = StudentSerializer(stu)
-     ```
-     
- 
+- To see serialized data - serializer.data
+### JSON Renderer
+- This is used to render Serialized data into JSON which is understandable by Front End.
+- Importing JSONRenderer = from rest_framework.renderers import JSONRenderer
+- Render the Data into Json = json_data = JSONRenderer.render(serializer.data)
+![image](https://github.com/pratt0007/TIL/assets/100209212/540fc0de-d5c2-49ae-b3b3-bf0f8d99253b)
+
 
 
