@@ -191,8 +191,13 @@
 - CPU utilization
 - Through Put - Number of process exe per unit time.
 
- 
- 
+ ### First come first serve (FCFS) Algo 
+ - Simple scheduling algorithm, it assigns the CPU process which arrives first.
+ - Queue Data structure
+ - Non Primitive in nature
+ - Make Gantt Chart
+![image](https://github.com/pratt0007/TIL/assets/100209212/a94e81f8-e6f6-4fdf-94e6-168f92782fe3)
+
 
 
 
