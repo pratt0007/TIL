@@ -1,4 +1,4 @@
-    # REST API
+# REST API
 - REST is an acronym name of Representational State Transfer, a standardized way to provide data to other applications.
 - In other words, it is used for building and communicating with web services. It is the best way to transfer data across the applications and can be used by the application.
 - It mandates resources on the web are represented in JSON, HTML, or XML. Sometimes APIs are used in the other application to change the data.
