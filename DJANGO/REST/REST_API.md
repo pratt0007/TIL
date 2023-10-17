@@ -76,6 +76,15 @@ print(f"Name: {name}, Age: {age}, City: {city}")
 - In Django REST Framework, serializers are responsible for converting complex data such as querysets and model instances to native Python datatypes (called serialization) that can then be easily rendered into JSON, XML or other content types which is understandable by Front End.
 - Serializers are also responsible for deserialization which means it allows parsed data to be converted back into complex types, after first validating the incoming data.
 
+### Creating a Serializer class
+- Create a separate seriealizers.py file to write all serializers
+```PYTHON
+from rest framework import serializers
+class StudentSerializer(serializers.Serializer):
+ name = serializers.CharField(max_length=100)
+ roll = serializers.IntegerFieldO
+ city = serializers.CharField(max_length=100)
+```
 
 
 
