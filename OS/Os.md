@@ -171,6 +171,12 @@
  - A process excecution consist of a cycle of CPU execution and I/O execution.
  - Normally every process starts with CPU burst and then if required goes to I/o.
 
+#### Primitive and Non-Primitive
+- 1. Non- primitive - When a process is running in CPU then no other process can come and terminate this current process. The process in the queue has to wait fot the event to end irrrspective of its priority.
+  2. Primitive - High priority process gets the CPU form the low priorty process from the CPU
+
+### Criteria to judge a CPU Scheduling algo- 
+
  
 
 
