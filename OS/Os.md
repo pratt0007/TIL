@@ -176,7 +176,17 @@
   2. Primitive - High priority process gets the CPU form the low priorty process from the CPU
 
 ### Criteria to judge a CPU Scheduling algo- 
+- Burst Time/Execution Time/ Running Time - is the time process require for running on CPU
+- Waiting Time - time spend by a process in ready state waiting for CPU.
+- Arrival Time - When a prcoess enetrs ready queue
+- Exit time - When time process exits the system
+- Turn Ariund Time- tital time spend by a process in the system.
+      - TAT = EXIT TIME - ARRIVAL TIME
+      - TAT = BURST TIME + WAITING TIME
+- Response time - When a process enetrs a ready queue for the first time, then the time to get CPU from the rady queue for the first time is called response time.
 
+- 
+- 
  
 
 
