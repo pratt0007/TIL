@@ -90,6 +90,17 @@ class StudentSerializer(serializers.Serializer):
 - Here we make models.py in django and we make a model in it which stores the data in dataabse in the form of a table. Now we need to transmit the data to our client for that first we need to concvert the data in JSON file.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/cc06c85d-a337-4c57-b56e-814fd7124462)
 
+### Serialization
+- The process of converting complex data such as querrysets and model instances to native python datatypes are called serialization in DRF.
+- 1. Creating a model instance stu
+     ```PYTHON
+     stu = Student.objects.get(id=1)
+     ```
+  2. Converting model instance stu to python dic/ serializing object
+     ```python
+     serializer = StudentSerializer(stu)
+     ```
+     
  
 
 
