@@ -4,7 +4,7 @@
 - The hardware (CPU),the memory,and the input/output (I/O) devices —provides the basic computing resources for the system.
 ### 3 basic work of OS-
   - An operating system is a program that manages a computer ’s hardware, interface between user and hardware.
-  - Resource Manager - Manage system resources in an unbaised fashion both for hardware and software.
+  - Resource Manager - Manage system resources in an unbaised fashion both for hardware and software
   - Platform for applications, all the application will interact with OS not with the hardware directly.
 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/4dd69ed7-4f99-411e-946e-26cbbeff32f8)
