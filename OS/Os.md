@@ -197,7 +197,9 @@
  - Non Primitive in nature
  - Make Gantt Chart
 ![image](https://github.com/pratt0007/TIL/assets/100209212/a94e81f8-e6f6-4fdf-94e6-168f92782fe3)
-
+##### Convoy Effect-
+- Smaller process have to wait for long time for bigger pricess to release CPU.
+- If a big process is running in the CPU the small process has to wait.
 
 
 
