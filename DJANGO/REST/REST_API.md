@@ -103,5 +103,10 @@ class StudentSerializer(serializers.Serializer):
 - Render the Data into Json = json_data = JSONRenderer.render(serializer.data)
 ![image](https://github.com/pratt0007/TIL/assets/100209212/540fc0de-d5c2-49ae-b3b3-bf0f8d99253b)
 
+### De- Serialization
+- Serializers are also responsible for deserialization, which means it allow parsed data to be converted back into complex types, after first validating the incoming data.
+![image](https://github.com/pratt0007/TIL/assets/100209212/6bb5d820-9e56-4911-97c2-8f0534c1de30)
+
+
 
 
