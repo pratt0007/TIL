@@ -201,7 +201,12 @@
 - Smaller process have to wait for long time for bigger pricess to release CPU.
 - If a big process is running in the CPU the small process has to wait
 
-
+### Shortest Job Scheduling 
+- Out of all available process, CPU is assigned to the process having smallest burst time irrespective of priority and seniority.
+- If the burst time is same then the job who comes first will get CPU first.
+- In this there both Primitive as well as NON- Primitive.
+- Pre-emtive = Shortest remaining time first.
+  
 
 
   
