@@ -206,7 +206,8 @@
 - If the burst time is same then the job who comes first will get CPU first.
 - In this there both Primitive as well as NON- Primitive.
 - Pre-emtive = Shortest remaining time first.
-  
+- Shortest remaining time first is the best for minimizing the average waiting time in the ready queue.
+![image](https://github.com/pratt0007/TIL/assets/100209212/23c48003-7839-48a7-8392-34c4a78f5af8)
 
 
   
