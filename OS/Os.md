@@ -209,5 +209,6 @@
 - Shortest remaining time first is the best for minimizing the average waiting time in the ready queue.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/23c48003-7839-48a7-8392-34c4a78f5af8)
 
-
+### Priority Algorithm
+ 
   
