@@ -218,4 +218,10 @@
 ##### Imp
 - In this type of scheduling, the chances of STARVATION is very high because maybe a process priority is low and it doesnt get chance to get CPU.
 - TO avoid this, AGEING is used -> It is defined as a technique to gradually increase the priority of a process that waits in the system for long time.
+
+### Round Robin Algo for CPU scheduling 
+- This is time sharing system, such that CPU goes to varipus process even if the process is not complete.
+- Responsive and divide time of the CPU among the process in cycle form
+- Here a ready queue is treated as a circular queue
+- A time quantum is SET such that either process will terminate within that time quantum or the CPU will shift to another process.
 -  
