@@ -231,3 +231,5 @@
                           - decode
                           - excecute
                           - store
+
+- Critical section problem -> At a one time only one process can go in the critical section.
