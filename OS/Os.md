@@ -224,4 +224,10 @@
 - Responsive and divide time of the CPU among the process in cycle form
 - Here a ready queue is treated as a circular queue
 - A time quantum is SET such that either process will terminate within that time quantum or the CPU will shift to another process.
--  
+
+
+## Process Synchronization
+- 4 steps of a program -> - instruction  fetch
+                          - decode
+                          - excecute
+                          - store
