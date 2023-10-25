@@ -210,5 +210,12 @@
 ![image](https://github.com/pratt0007/TIL/assets/100209212/23c48003-7839-48a7-8392-34c4a78f5af8)
 
 ### Priority Algorithm
- 
-  
+- Here a priority level is associated with each process.
+- At a time, CPU is allocated to the highest priority irrespective of its burts time or in time.
+- Tie is broken using FCFS
+- Both versions Pre - emptive and non pre - emptive
+
+##### Imp
+- In this type of scheduling, the chances of STARVATION is very high because maybe a process priority is low and it doesnt get chance to get CPU.
+- TO avoid this, AGEING is used -> It is defined as a technique to gradually increase the priority of a process that waits in the system for long time.
+-  
