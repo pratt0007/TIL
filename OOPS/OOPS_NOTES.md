@@ -5,7 +5,7 @@
 - The main difference between C++ and C languange is that C++ is object oriented lang.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/0932f045-33c5-4a42-91e0-78cf9979c302)
 ## CLASS
-- The building block of C++ that leads to Object-Oriented programming is a Class.
+- The building block of C++ that leads to Object-Oriented programming is a class
 - It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class(OBJECT)
 - A class is like a blueprint for an object.
 - If empty class the size of the class will be 1.
