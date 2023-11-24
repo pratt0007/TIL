@@ -240,4 +240,6 @@ There are 3 necessary conditions to satisfy this criteria-
 - Mutual Exclusion (Mandetory)
 - Progress (There should not be any cycles, the process should move forwd)(Mandetory CRITERIA)
 - Bounded Weight (To take the problem of starvation. After a specific amount of waiting in the ready queue, the process will exceed its bound condition) (OPTIONAL CRITERIA)
--  
+
+### 2 Process Solution for Critical section problem
+![image](https://github.com/pratt0007/TIL/assets/100209212/6aca0da1-8731-49bf-96ab-76c482348d0b)
