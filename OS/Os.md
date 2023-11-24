@@ -258,5 +258,8 @@ Solution For this
 ## Semaphores
 - A semaphore is an integer variable that apart form initialization, is accessed only through two standard atomic operation.
 
-
+Basic of any process/Code
+![image](https://github.com/pratt0007/TIL/assets/100209212/993faaaf-1fa2-4b39-be62-d82ec4bdeca1)
+The solution for the Problem
+![image](https://github.com/pratt0007/TIL/assets/100209212/a91e670c-c709-4da6-b0be-5d3348075663)
 
