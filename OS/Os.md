@@ -243,3 +243,11 @@ There are 3 necessary conditions to satisfy this criteria-
 
 ### 2 Process Solution for Critical section problem
 ![image](https://github.com/pratt0007/TIL/assets/100209212/6aca0da1-8731-49bf-96ab-76c482348d0b)
+
+The Below Solution is wrong as it satisfies the Mutual Exclusice but doesnt satisfy progress as it is infinite loop with in.
+![image](https://github.com/pratt0007/TIL/assets/100209212/441738d8-bf6b-49e5-a63a-1e02f09592f2)
+
+Solution For this
+- We will make a flag array which has to be true if the process wants to go in the critical section.
+![image](https://github.com/pratt0007/TIL/assets/100209212/9d0bbf0c-23f3-4186-9ddb-17c388649b5a)
+
