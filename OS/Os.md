@@ -251,3 +251,12 @@ Solution For this
 - We will make a flag array which has to be true if the process wants to go in the critical section.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/9d0bbf0c-23f3-4186-9ddb-17c388649b5a)
 
+#### Peterson Solution
+![image](https://github.com/pratt0007/TIL/assets/100209212/01f04435-84a5-40f5-b74a-d2681692cf99)
+- This solution satisfies all the conditions
+
+## Semaphores
+- A semaphore is an integer variable that apart form initialization, is accessed only through two standard atomic operation.
+
+
+
