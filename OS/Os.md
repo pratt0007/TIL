@@ -233,3 +233,11 @@
                           - store
 
 - Critical section problem -> At a one time only one process can go in the critical section.
+
+
+### Critical Section Problem 
+There are 3 necessary conditions to satisfy this criteria-
+- Mutual Exclusion (Mandetory)
+- Progress (There should not be any cycles, the process should move forwd)(Mandetory CRITERIA)
+- Bounded Weight (To take the problem of starvation. After a specific amount of waiting in the ready queue, the process will exceed its bound condition) (OPTIONAL CRITERIA)
+-  
