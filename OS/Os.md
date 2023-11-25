@@ -256,6 +256,8 @@ Solution For this
 - This solution satisfies all the conditions
 
 ## Semaphores
+- a semaphore in an operating system is like a flag that helps different parts of a computer program communicate and coordinate with each other. It's a way for different processes or threads to take turns using shared resources, like a printer, a file, or a piece of memory.
+- Semaphores are used to prevent conflicts and ensure that different parts of a program don't interfere with each other when they're using shared resources. They help in managing the order and timing of activities in a coordinated way, just like the special toy semaphore helps kids take turns playing.
 - A semaphore is an integer variable that apart form initialization, is accessed only through two standard atomic operation.
 
 Basic of any process/Code
