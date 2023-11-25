@@ -266,6 +266,12 @@ The solution for the Problem
 ![image](https://github.com/pratt0007/TIL/assets/100209212/a91e670c-c709-4da6-b0be-5d3348075663)
 
 ### Application Of semaphore
-- For deciding the order of process execution
+- For deciding the order of process execution 
 - For managing resources.
--  
+#### Producer Consumer Problem 
+![image](https://github.com/pratt0007/TIL/assets/100209212/461faead-08c7-4e9b-b98b-c42d28546225)
+
+  #### Reader- Writer Problem
+  ![image](https://github.com/pratt0007/TIL/assets/100209212/4142f15e-8afc-45aa-b110-72bff7dcbdc0)
+
+ 
