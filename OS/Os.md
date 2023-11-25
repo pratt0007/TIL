@@ -265,3 +265,7 @@ Basic of any process/Code
 The solution for the Problem
 ![image](https://github.com/pratt0007/TIL/assets/100209212/a91e670c-c709-4da6-b0be-5d3348075663)
 
+### Application Of semaphore
+- For deciding the order of process execution
+- For managing resources.
+-  
