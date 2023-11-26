@@ -289,6 +289,11 @@ This solution may have a deadlock condition
 ## DEADLOCKS
 - In a multiprogramming system, a number of process compete for limitted number of resources and id a resource is not available at that instance, this process enters a  waiting state.
 - If running process is unable to change its waiting state indefinitely then they are gone into deadlock condition.
+- → Every praers will request far the resource
+- → if entertaned thus, process will use the resource
+- → Process must releare the resolerce
+
+
 
 
  
