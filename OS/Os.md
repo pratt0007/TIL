@@ -268,10 +268,28 @@ The solution for the Problem
 ### Application Of semaphore
 - For deciding the order of process execution 
 - For managing resources.
+
+![image](https://github.com/pratt0007/TIL/assets/100209212/72d8d466-ce98-4fb3-b5d8-80b6a900e8d3)
+
 #### Producer Consumer Problem 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/461faead-08c7-4e9b-b98b-c42d28546225)
 
   #### Reader- Writer Problem
   ![image](https://github.com/pratt0007/TIL/assets/100209212/4142f15e-8afc-45aa-b110-72bff7dcbdc0)
 
+  #### Dining Philosopher Problem
+  Problem Explain 
+  ![image](https://github.com/pratt0007/TIL/assets/100209212/1ed51f22-cfd3-458f-b8c4-ecfcf0e0e93a)
+  ![image](https://github.com/pratt0007/TIL/assets/100209212/3f5c8f92-bb3e-43db-b24f-940d718c1053)
+
+  SOLUTION
+  ![image](https://github.com/pratt0007/TIL/assets/100209212/4d469170-7b5c-4088-ad17-7002df55d4ea)
+This solution may have a deadlock condition 
+
+## DEADLOCKS
+- In a multiprogramming system, a number of process compete for limitted number of resources and id a resource is not available at that instance, this process enters a  waiting state.
+- If running process is unable to change its waiting state indefinitely then they are gone into deadlock condition.
+
+
+ 
  
