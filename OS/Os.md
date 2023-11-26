@@ -293,6 +293,15 @@ This solution may have a deadlock condition
 - → if entertaned thus, process will use the resource
 - → Process must releare the resolerce
 
+### Conditions Necessary for Deadlock (4 condition)
+![image](https://github.com/pratt0007/TIL/assets/100209212/74764e53-9e04-48b8-970a-fd95d75fd335)
+
+1. MUTUAL EXCLUSION -  At least one resource type in the system which con be und in non-sharable mode, i.e. mutual exclusion (one- at a time/one-byone) eg Printer.
+2. HOLD AND WAIT
+3. NON PRE-EMPTIVE
+4. CIRCULAR WAIT
+### DeadLock Handling 
+
 
 
 
