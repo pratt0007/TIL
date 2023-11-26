@@ -301,6 +301,9 @@ This solution may have a deadlock condition
 3. NON PRE-EMPTIVE
 4. CIRCULAR WAIT
 ### DeadLock Handling 
+![image](https://github.com/pratt0007/TIL/assets/100209212/9eb7d29d-a397-4645-b315-8f2d4cb487e7)
+#### DeadLock Prevention
+- Here we have to 
 
 
 
