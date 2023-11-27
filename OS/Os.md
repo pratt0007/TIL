@@ -29,6 +29,12 @@
 
 ### Moore Law
 - In the 1960s, Moore’s Law predicted that the number of transistors on an integrated circuit would double every eighteen months, and that prediction has held true.
+
+### IPC-
+-  How will communication happen between user mode and kernel mode?
+-   Inter process communication (IPC).
+1.   Two processes executing independently, having independent memory space (Memory protection), But some may need to communicate to work.
+2.   Done by shared memory and message passing.
 ### Interrupt
 - The occurrence of an event is usually signaled by an interrupt from either the hardware or the software.
 -  Hardware may trigger an interrupt at any time by sending a signal to the CPU,usually by way of the system bus.
