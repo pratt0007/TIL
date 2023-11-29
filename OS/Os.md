@@ -309,7 +309,11 @@ This solution may have a deadlock condition
 ### DeadLock Handling 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/9eb7d29d-a397-4645-b315-8f2d4cb487e7)
 #### DeadLock Prevention
-- Here we have to 
+![image](https://github.com/pratt0007/TIL/assets/100209212/342ee806-b01f-4647-ac96-3de0f4cd369e)
+#### Hold and Wait
+
+
+
 
 
 
