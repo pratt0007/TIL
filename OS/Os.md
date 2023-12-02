@@ -1,4 +1,4 @@
-#  OS
+   #  OS
 - An operating system is a program that manages a computer ’s hardware.
 - It also provides a basis for application programs and acts as an intermediary between the computer user and the computer hardware.
 - The hardware (CPU),the memory,and the input/output (I/O) devices —provides the basic computing resources for the system.
@@ -311,6 +311,10 @@ This solution may have a deadlock condition
 #### DeadLock Prevention
 ![image](https://github.com/pratt0007/TIL/assets/100209212/342ee806-b01f-4647-ac96-3de0f4cd369e)
 #### Hold and Wait
+![image](https://github.com/pratt0007/TIL/assets/100209212/b48cb6e2-88a4-4b85-935d-d8a41c36de52)
+#### Violation Of No Pre-emptive
+
+
 
 
 
