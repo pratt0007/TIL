@@ -90,3 +90,19 @@ HTML FILE
 - When a prompt box pops up, the user will have to click either "0K" or "Cancel" to proceed after  entering an input value.
 ### A confirmation dialog
 - box is mostly used to take user's permission on any option. It displays a dialog box with two buttons: Okk and Cancel.
+
+
+### String Datatype
+- Normally, JavaScript strings are primitive values, created from literals:
+```
+var firstName1 = "John";
+```
+- But strings can also be defined as objects with the keyword new:
+```
+var firstName2 = new String("John'");
+```
+- Now typeof(firstName1) = String
+- And typeof(firstName2) = object---> Both are string but one is string and other os string object.
+- When using the == operator equal strings are equal.
+- When using the === operator, equal strings are not equal, because the === operator expects equality in both type and value.
+  
