@@ -84,5 +84,9 @@ HTML FILE
 - Here if the datatype of the variable is not defined then if we print the variable it will give Undefined.
 - But when we but var a = Null; then it will give value as NULL.
 - document write(typeof(b)); TO get the type of data if not known!
-- 
 
+### JavaScript Dialog , Boxes Alert, Prompt, Confirmation.
+- Prompt Box. A prompt box is often used if you want the user to input a value before entering a page.
+- When a prompt box pops up, the user will have to click either "0K" or "Cancel" to proceed after  entering an input value.
+### A confirmation dialog
+- box is mostly used to take user's permission on any option. It displays a dialog box with two buttons: Okk and Cancel.
