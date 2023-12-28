@@ -73,3 +73,14 @@ HTML FILE
 </body>  
 </html>
 ```
+## Datatypes
+- JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. You need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc.
+- JavaScript provides different data types to hold different types of values. There are two types of data types in JavaScript.
+     - Primitive data type
+     - Non-primitive (reference) data type
+ ![image](https://github.com/pratt0007/TIL/assets/100209212/2b28a27f-308a-4345-845b-03dd56ef0b64)
+#### Undefined VS Null
+![image](https://github.com/pratt0007/TIL/assets/100209212/d02041b5-4793-4111-8b70-5d8c1bfd2c80)
+- Here if the datatype of the variable is not defined then if we print the variable it will give Undefined.
+- But when we but var a = Null; then it will give value as NULL.
+
