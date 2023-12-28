@@ -49,3 +49,27 @@ function msg(){
 </body>  
 </html>
 ```
+#### External JavaScript file
+- We can create external JavaScript file and embed it in many html page.
+- It provides code re usability because single JavaScript file can be used in several html pages.
+- An external JavaScript file must be saved by .js extension. It is recommended to embed all JavaScript files into a single file. It increases the speed of the webpage.
+- Message.js file
+```
+function msg(){  
+ alert("Hello Javatpoint");  
+}
+```
+HTML FILE
+```
+<html>  
+<head>  
+<script type="text/javascript" src="message.js"></script>  
+</head>  
+<body>  
+<p>Welcome to JavaScript</p>  
+<form>  
+<input type="button" value="click" onclick="msg()"/>  
+</form>  
+</body>  
+</html>
+```
