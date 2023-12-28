@@ -83,4 +83,6 @@ HTML FILE
 ![image](https://github.com/pratt0007/TIL/assets/100209212/d02041b5-4793-4111-8b70-5d8c1bfd2c80)
 - Here if the datatype of the variable is not defined then if we print the variable it will give Undefined.
 - But when we but var a = Null; then it will give value as NULL.
+- document write(typeof(b)); TO get the type of data if not known!
+- 
 
