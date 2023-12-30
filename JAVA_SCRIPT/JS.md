@@ -105,4 +105,5 @@ var firstName2 = new String("John'");
 - And typeof(firstName2) = object---> Both are string but one is string and other os string object.
 - When using the == operator equal strings are equal.
 - When using the === operator, equal strings are not equal, because the === operator expects equality in both type and value.
-  
+## DOM Structure in JS(Document Object Model)
+![image](https://github.com/pratt0007/TIL/assets/100209212/da89008e-e01b-4db1-887d-794faa0870a8)
