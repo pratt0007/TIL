@@ -141,7 +141,7 @@ Enter Name:<input type="text" name="name"/>
 </script>
 ```
 - Here the content of that ID is stored in innerHTML.
-```
+```HTML
 <p class="hello"> Hello Word </p>
 <p class="hello"> Hello Agian </p>
 <script type = "text/javascript">
@@ -150,5 +150,5 @@ Enter Name:<input type="text" name="name"/>
 </script>
 ```
 - Since the class can be used multiple times hence it is takes as an array and to get something on the screen or print it we need to get its index value.
-- 
+
 
