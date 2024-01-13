@@ -133,3 +133,22 @@ Enter Name:<input type="text" name="name"/>
 - Elements: Represent the HTML or XML tags in a document. Elements are organized in a tree structure, with the root being the html element. Elements can have attributes and content.
 - 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/da89008e-e01b-4db1-887d-794faa0870a8)
+```HTML
+<p id="hi"> Hello Word </p>
+<script type = "text/javascript">
+    var a = document.getElementById("hi").innerHTML;
+    document.write(a);
+</script>
+```
+- Here the content of that ID is stored in innerHTML.
+```
+<p class="hello"> Hello Word </p>
+<p class="hello"> Hello Agian </p>
+<script type = "text/javascript">
+    var a = document.getElementByClassName("hello")[INDEX_VALUE].innerHTML;
+    document.write(a);
+</script>
+```
+- Since the class can be used multiple times hence it is takes as an array and to get something on the screen or print it we need to get its index value.
+- 
+
