@@ -122,5 +122,14 @@ Enter Name:<input type="text" name="name"/>
 <input type="button" onclick="printvalue()" value="print name"/>  
 </form>
 ```
-Here Script = TAG // Type == ATTRIBUTE and whole combination == ELEMENT
+- Here Script = TAG
+- Type == ATTRIBUTE
+- whole combination == ELEMENT
+### What is DOM structure
+- JavaScript interacts with the DOM to dynamically update the content, structure, and style of a web page.
+- When a web page is loaded, the browser creates a Document Object Model of the page.Acc. to w3c everything is a Node.
+- Window is a global object and by writing it on console we get everything of the page.
+- Document Object: The top-level object that represents the entire HTML or XML document. In a browser environment, you can access it using the document object. The whole page is document.
+- Elements: Represent the HTML or XML tags in a document. Elements are organized in a tree structure, with the root being the html element. Elements can have attributes and content.
+- 
 ![image](https://github.com/pratt0007/TIL/assets/100209212/da89008e-e01b-4db1-887d-794faa0870a8)
