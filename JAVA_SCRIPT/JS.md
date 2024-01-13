@@ -106,4 +106,21 @@ var firstName2 = new String("John'");
 - When using the == operator equal strings are equal.
 - When using the === operator, equal strings are not equal, because the === operator expects equality in both type and value.
 ## DOM Structure in JS(Document Object Model)
+- TAG ->HTML closing and opening tags eg Head body all are tags
+- Element-> Combination of tag open and close and data between it is called element.
+- Attribute ->They are those which define the properties of the tag used.
+```
+<script type="text/javascript">  
+function printvalue(){  
+var name=document.form1.name.value;  
+alert("Welcome: "+name);  
+}  
+</script>  
+  
+<form name="form1">  
+Enter Name:<input type="text" name="name"/>  
+<input type="button" onclick="printvalue()" value="print name"/>  
+</form>
+```
+Here Script = TAG // Type == ATTRIBUTE and whole combination == ELEMENT
 ![image](https://github.com/pratt0007/TIL/assets/100209212/da89008e-e01b-4db1-887d-794faa0870a8)
