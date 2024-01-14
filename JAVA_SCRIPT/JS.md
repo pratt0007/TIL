@@ -152,3 +152,7 @@ Enter Name:<input type="text" name="name"/>
 - Since the class can be used multiple times hence it is takes as an array and to get something on the screen or print it we need to get its index value.
 
 
+### Printing a section of a page
+- window.print() -> to print the whole page
+- ![image](https://github.com/pratt0007/TIL/assets/100209212/dbe2b137-4179-4dcb-bc65-0406686f80a8)
+
