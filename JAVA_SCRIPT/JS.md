@@ -155,4 +155,11 @@ Enter Name:<input type="text" name="name"/>
 ### Printing a section of a page
 - window.print() -> to print the whole page
 - ![image](https://github.com/pratt0007/TIL/assets/100209212/dbe2b137-4179-4dcb-bc65-0406686f80a8)
+### Events
+- JavaScript's interaction with HTML is handled through events that occur when the user or the browser manipulates a page.
+- Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript code.
+- When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.
+![image](https://github.com/pratt0007/TIL/assets/100209212/701611ba-36ff-4b97-8285-2d173a4b63fc)
+- These attributes of buttons are called events
+
 
