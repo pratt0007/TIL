@@ -165,3 +165,12 @@ Enter Name:<input type="text" name="name"/>
 - var d = new Date(); -> to print date on wbpage. JS will use the browsers's time zone.
 - ![image](https://github.com/pratt0007/TIL/assets/100209212/6cfe523e-e7ee-4982-9701-fe3784c7304c)
 
+### Time display
+![image](https://github.com/pratt0007/TIL/assets/100209212/0611edb4-186c-4c40-85e7-7e856b59acb3)
+- This will show the current time but the web page needs to be re-freshed again and again to get time.
+### Dynamic Clock in JS
+- The setlnterval() method calls a function or evaluates an expression at specified intervals (in milliseconds). The setlnterval() method will continue calling the function until clearlnterval() is called, or the window is closed. The ID value returned by setlnterval() is used as the parameter for the clearlnterval() method.
+- 
+
+
+
