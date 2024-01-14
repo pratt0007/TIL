@@ -161,5 +161,7 @@ Enter Name:<input type="text" name="name"/>
 - When the page loads, it is called an event. When the user clicks a button, that click too is an event. Other examples include events like pressing any key, closing a window, resizing a window, etc.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/701611ba-36ff-4b97-8285-2d173a4b63fc)
 - These attributes of buttons are called events
-
+### Date Object
+- var d = new Date(); -> to print date on wbpage. JS will use the browsers's time zone.
+- ![image](https://github.com/pratt0007/TIL/assets/100209212/6cfe523e-e7ee-4982-9701-fe3784c7304c)
 
