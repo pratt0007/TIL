@@ -170,7 +170,8 @@ Enter Name:<input type="text" name="name"/>
 - This will show the current time but the web page needs to be re-freshed again and again to get time.
 ### Dynamic Clock in JS
 - The setlnterval() method calls a function or evaluates an expression at specified intervals (in milliseconds). The setlnterval() method will continue calling the function until clearlnterval() is called, or the window is closed. The ID value returned by setlnterval() is used as the parameter for the clearlnterval() method.
-- 
+
+  
 
 
 
