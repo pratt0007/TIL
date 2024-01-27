@@ -107,6 +107,14 @@ class StudentSerializer(serializers.Serializer):
 - Serializers are also responsible for deserialization, which means it allow parsed data to be converted back into complex types, after first validating the incoming data.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/6bb5d820-9e56-4911-97c2-8f0534c1de30)
 
+### Serializer Field
+Differnet Data types fields
+![image](https://github.com/pratt0007/TIL/assets/100209212/657c7b5b-14dc-46e6-8840-96aa0ba15409)
+ ![image](https://github.com/pratt0007/TIL/assets/100209212/e9fe8d48-7f57-44c0-805b-86ad9fd06f43)
+
+
+
+
 
 
 
