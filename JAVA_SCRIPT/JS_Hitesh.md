@@ -36,6 +36,7 @@ true
 Some conversion are Null to NAN some operator converts to 0
 
 ```
-
-
+- Stirct check -> (===) -> check same data types as well
+- console.log("0" == 0) return TRUE
+- console.log("0" === 0) return False
 
