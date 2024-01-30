@@ -45,6 +45,18 @@ Some conversion are Null to NAN some operator converts to 0
 - Heap memory -> Non primitive -> Call by reference -> The change in any of the type will result in change in all as it is stored in heap
 ![image](https://github.com/pratt0007/TIL/assets/100209212/77d9596b-9d4e-4d71-a97f-fe1cb0e0fc44)
 
+```Js
+let a = "hello" -> not an object
+const a = new String("hello") -> Object-> can use inbult functions
+```
+```JS
+let a = "hello"
+console.log(a)
 
- 
+const b = new String("Hello")
+console.log(b)
 
+o/p
+hello
+[String: 'Hello']
+```
