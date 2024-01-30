@@ -40,3 +40,11 @@ Some conversion are Null to NAN some operator converts to 0
 - console.log("0" == 0) return TRUE
 - console.log("0" === 0) return False
 
+## Type of Memory Structutes
+- Stack memory-> primitive-> Call by value
+- Heap memory -> Non primitive -> Call by reference -> The change in any of the type will result in change in all as it is stored in heap
+![image](https://github.com/pratt0007/TIL/assets/100209212/77d9596b-9d4e-4d71-a97f-fe1cb0e0fc44)
+
+
+ 
+
