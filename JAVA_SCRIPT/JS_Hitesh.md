@@ -65,6 +65,15 @@ hello
 See this array doent concatinate -> it adds us as whole subarray.
 - The 4th element of the array is that array which we pushed.
 - if we do concat() -> same output if we print that same array, if we make a new array and console.log() it then we get the concatinated array.
-- 
+
+## Object
+ ![image](https://github.com/pratt0007/TIL/assets/100209212/2eca499a-694e-40a2-b75f-4272909dde86)
+- 2 ways to get the content of an object.
+- a) .operator but if we define key as "" strings then we have to call by [] bracket.
+
+## Symbol- 
+- In JavaScript, a Symbol is a primitive data type introduced in ECMAScript 6 (ES6).
+- It is a unique and immutable data type that can be used as an identifier for object properties.
+- Unlike strings or numbers, symbols are guaranteed to be unique, and they help avoid naming conflicts in object properties.
   
 
