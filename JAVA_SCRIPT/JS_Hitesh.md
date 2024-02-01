@@ -60,3 +60,8 @@ o/p
 hello
 [String: 'Hello']
 ```
+- array in JS can store any datatypes in single array.
+![image](https://github.com/pratt0007/TIL/assets/100209212/b6573831-e765-4355-9da9-62fd14576d1e)
+See this array doent concatinate -> it adds us as whole subarray.
+  
+
