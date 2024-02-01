@@ -63,5 +63,8 @@ hello
 - array in JS can store any datatypes in single array.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/b6573831-e765-4355-9da9-62fd14576d1e)
 See this array doent concatinate -> it adds us as whole subarray.
+- The 4th element of the array is that array which we pushed.
+- if we do concat() -> same output if we print that same array, if we make a new array and console.log() it then we get the concatinated array.
+- 
   
 
