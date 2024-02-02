@@ -75,5 +75,9 @@ See this array doent concatinate -> it adds us as whole subarray.
 - In JavaScript, a Symbol is a primitive data type introduced in ECMAScript 6 (ES6).
 - It is a unique and immutable data type that can be used as an identifier for object properties.
 - Unlike strings or numbers, symbols are guaranteed to be unique, and they help avoid naming conflicts in object properties.
-  
+
+## Functions
+- Rest/ Spread operator
+
+
 
