@@ -78,6 +78,8 @@ See this array doent concatinate -> it adds us as whole subarray.
 
 ## Functions
 - Rest/ Spread operator
+- Nested loop me child func ke variables can access parent func ke variables
+- 
 
 
 
