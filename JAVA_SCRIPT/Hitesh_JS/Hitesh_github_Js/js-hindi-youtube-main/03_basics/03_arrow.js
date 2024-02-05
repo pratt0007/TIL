@@ -8,7 +8,7 @@ const user = {
     }
 
 }
-
+// Here the this can work with objects as it will return Hitesh, but if we run this for a function as below thrn it will not work.
 // user.welcomeMessage()
 // user.username = "sam"
 // user.welcomeMessage()
