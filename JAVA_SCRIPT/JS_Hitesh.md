@@ -80,5 +80,9 @@ See this array doent concatinate -> it adds us as whole subarray.
 - Rest/ Spread operator
 - Nested loop me child func ke variables can access parent func ke variables
 
+## This keyword
+- If we do console.log(this) inside an object ie -> const objname {}. Then we can fetch value inside
+- but if we define function then we cant use this keyword to get the data.
+- 
 
 
