@@ -83,6 +83,6 @@ See this array doent concatinate -> it adds us as whole subarray.
 ## This keyword
 - If we do console.log(this) inside an object ie -> const objname {}. Then we can fetch value inside
 - but if we define function then we cant use this keyword to get the data.
-- 
 
+![image](https://github.com/pratt0007/TIL/assets/100209212/003dfcc2-479d-4e17-a146-0f713a970bf4)
 
