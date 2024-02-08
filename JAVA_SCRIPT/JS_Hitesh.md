@@ -100,4 +100,8 @@ See this array doent concatinate -> it adds us as whole subarray.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/267ec367-2dfc-4644-a116-c2981a3b56e7)
 ![image](https://github.com/pratt0007/TIL/assets/100209212/12782faa-f018-442c-aa07-09327115651c)
 
+ ## Qyerry selector
+ - It selects the first occurance if there are multiple eg> h1/h2
+ - 
+
 
