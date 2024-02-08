@@ -89,4 +89,6 @@ See this array doent concatinate -> it adds us as whole subarray.
 ![image](https://github.com/pratt0007/TIL/assets/100209212/a192ac2f-16f8-48e1-a9f6-b2ae779efd87)
 ## Loops
 ![image](https://github.com/pratt0007/TIL/assets/100209212/344453e1-61fb-465f-948f-fb3659f7393f)
+# DOM
+![image](https://github.com/pratt0007/TIL/assets/100209212/4a4816eb-eae2-495b-b870-c6b2ca7e554b)
 
