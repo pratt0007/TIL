@@ -92,3 +92,12 @@ See this array doent concatinate -> it adds us as whole subarray.
 # DOM
 ![image](https://github.com/pratt0007/TIL/assets/100209212/4a4816eb-eae2-495b-b870-c6b2ca7e554b)
 
+![image](https://github.com/pratt0007/TIL/assets/100209212/caed11ef-4f6d-447e-aa43-665e6801d13c)
+## Differece btw these 
+1. Text Content -> Shows all the content even we make a span in btw and remove from the display
+2. Inner text -> Show the content that will be visible on the screen.
+3. InnerHtml -> gets whole content in that even the HTML code
+![image](https://github.com/pratt0007/TIL/assets/100209212/267ec367-2dfc-4644-a116-c2981a3b56e7)
+![image](https://github.com/pratt0007/TIL/assets/100209212/12782faa-f018-442c-aa07-09327115651c)
+
+
