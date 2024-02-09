@@ -102,6 +102,4 @@ See this array doent concatinate -> it adds us as whole subarray.
 
  ## Qyerry selector
  - It selects the first occurance if there are multiple eg> h1/h2
- - 
-
 
