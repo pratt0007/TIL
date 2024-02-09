@@ -103,3 +103,5 @@ See this array doent concatinate -> it adds us as whole subarray.
  ## Qyerry selector
  - It selects the first occurance if there are multiple eg> h1/h2
 
+## Parent Child replationship
+![image](https://github.com/pratt0007/TIL/assets/100209212/942ba8b8-4c4b-47c5-b543-f16e2a90dc8a)
