@@ -12,6 +12,7 @@ console. log (valueinnumber) ;
 For this the console.log(score) will show NaN
 and if the score is NULL then it will show 0
 ```
+
 ```JS
 console. log ("1")
 console. log(l + "2")
