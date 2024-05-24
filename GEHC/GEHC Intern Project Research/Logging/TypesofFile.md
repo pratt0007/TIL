@@ -9,4 +9,6 @@
 
 - 3dphcon.psd.log -> This file has all the dates of logs that were entered.
 - 3dtof.psd.log
-- 
+- advanced-rules.log
+- efgre3d.psd.log
+- efgre3d_aspir.psd.log
